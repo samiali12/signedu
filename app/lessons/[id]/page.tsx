@@ -1,5 +1,5 @@
 import { cookies } from "next/headers";
-import Lesson from "@/components/lessons/Lesson";
+import Lesson from "../../../components/lessons/Lesson";
 import { LESSONS } from "@/data/lesson";
 import { translateMany } from "@/lib/translate";
 
