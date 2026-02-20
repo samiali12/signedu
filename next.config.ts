@@ -6,14 +6,13 @@ export const nextConfig: NextConfig = {
   /* config options here */
 };
 
-export default async function async(): Promise<NextConfig> {
-  return await withLingo(nextConfig, {
-    sourceRoot: './app',
-    sourceLocale: 'en',
-    targetLocales: ['ja', 'es', 'fr', 'de', 'ar'],
-    models: 'lingo.dev',
-    dev: {
-      usePseudotranslator: false
-    }
-  })
-}
+
+export default withLingo(nextConfig, {
+  sourceRoot: './app',
+  sourceLocale: 'en',
+  targetLocales: ['ja', 'es', 'fr', 'de', 'ar'],
+  models: 'lingo.dev',
+  dev: {
+    usePseudotranslator: false
+  }
+})
