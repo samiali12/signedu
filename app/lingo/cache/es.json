@@ -27,6 +27,23 @@
     "4f340616f185": "\"Siguiente\"",
     "530e1b8d2cf5": "\"Siguiente",
     "98544ed50011": "Siguiente",
-    "812a1d189979": "Lección no encontrada."
+    "812a1d189979": "Lección no encontrada.",
+    "f4d2907604db": "{expression0} Obtuviste",
+    "a9b49e402ead": "{expression0} Obtuviste <span0></span0>",
+    "19e03cb35ead": "{expression0} Obtuviste <span0>${score}</span0>",
+    "5beaa787ee40": "{expression0} Obtuviste <span0>${score}</span0> de",
+    "167aad9a0268": "{expression0} Obtuviste <span0>${score}</span0> de <span1></span1>",
+    "55b2da434b83": "{expression0} Obtuviste <span0>${score}</span0> de <span1>${expression0} (${percent}%)</span1>",
+    "1f129a550ed8": "Obtuviste <span0>${score}</span0> de <span1>${expression0} (${percent}%)</span1>",
+    "f0ca4e9fcf54": "Obtuviste <span0>${score}</span0>",
+    "dd2f5b1275f9": "Obtuviste <span0>{score}</span0>",
+    "d62d2e280dc3": "Obtuviste <span0>{score}</span0> de <span1>${expression0} (${percent}%)</span1>",
+    "5df38790e67a": "Obtuviste <span0>{score}</span0> de",
+    "08b7efc2fb8e": "Obtuviste <span0>{score}</span0> de <span1>{expression0} (${percent}%)</span1>",
+    "eeac9fa578e5": "Obtuviste <span0>{score}</span0> de <span1>{expression0} ({percent}%)</span1>",
+    "ea6cf7c730dd": "Obtuviste <span0>{score}</span0> de <span1>{expression0}</span1>",
+    "8efa18ec4636": "Obtuviste {score} de <span0>{expression0}</span0>",
+    "03640657bed5": "Obtuviste {score} de {expression0}",
+    "a7b0afaf89e4": "Obtuviste {score} de {expression0}{percent}%"
   }
 }

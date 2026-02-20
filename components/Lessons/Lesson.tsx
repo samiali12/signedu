@@ -59,7 +59,7 @@ const Lesson = ({ lesson }: Props) => {
     }
   };
 
-  if (finished) {
+  if (!finished) {
     const percent = Math.round((score / lesson.signs.length) * 100);
     return (
       <div className="flex flex-col items-center gap-8 py-16 text-center">
@@ -69,7 +69,7 @@ const Lesson = ({ lesson }: Props) => {
             Lesson Complete!
           </h2>
           <p className="text-gray-400 text-lg">
-            {`You scored ${score} out of ${lesson.signs.length} (${percent}%)`}
+            You scored {score} out of {lesson.signs.length} {percent}%
           </p>
         </div>
         <div className="flex gap-4">

@@ -1,4 +1,4 @@
-import Lessons from "@/components/Lessons/Lessons";
+import Lessons from "@/components/lessons/Lessons";
 import { LESSONS } from "@/data/lesson";
 import { translateMany } from "@/lib/translate";
 import { cookies } from "next/headers";

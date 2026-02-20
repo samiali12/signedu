@@ -14,6 +14,22 @@
     "e01a3ba7588a": "Lesson not found.",
     "1ba61518a74a": "{score} pts",
     "0a5c8a2ce09e": "🤟",
-    "f7207341c24a": "SignEdu"
+    "f7207341c24a": "SignEdu",
+    "b92b65ea365e": "Lesson Complete!",
+    "1f129a550ed8": "You scored <span0>${score}</span0> out of <span1>${expression0} (${percent}%)</span1>",
+    "e9a8593a56bf": "Try Again",
+    "bb13d4359667": "All Lessons",
+    "e2505a17680b": "Which sign is being shown?",
+    "fd43e3fec1a6": "Correct! Great job!",
+    "98544ed50011": "Next",
+    "f0ca4e9fcf54": "You scored <span0>${score}</span0>",
+    "dd2f5b1275f9": "You scored <span0>{score}</span0>",
+    "d62d2e280dc3": "You scored <span0>{score}</span0> out of <span1>${expression0} (${percent}%)</span1>",
+    "5df38790e67a": "You scored <span0>{score}</span0> out of",
+    "08b7efc2fb8e": "You scored <span0>{score}</span0> out of <span1>{expression0} (${percent}%)</span1>",
+    "eeac9fa578e5": "You scored <span0>{score}</span0> out of <span1>{expression0} ({percent}%)</span1>",
+    "ea6cf7c730dd": "You scored <span0>{score}</span0> out of <span1>{expression0}</span1>",
+    "8efa18ec4636": "You scored {score} out of <span0>{expression0}</span0>",
+    "03640657bed5": "You scored {score} out of {expression0}"
   }
 }
