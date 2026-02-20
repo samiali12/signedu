@@ -6423,3 +6423,5 @@
 2026-02-20T09:01:28.217Z [DEBUG] [Lingo.dev] 🔄 Hashes: 2862c9e1b2e4, cd61a944cf48
 2026-02-20T09:01:28.229Z [DEBUG] [Lingo.dev] [BUSY] Server is now busy (1 active)
 2026-02-20T09:01:28.648Z [DEBUG] [Lingo.dev] [IDLE] Server is now idle
+2026-02-20T09:03:31.338Z [DEBUG] [Lingo.dev] WebSocket client disconnected. Total clients: 0
+2026-02-20T09:51:37.557Z [DEBUG] [Lingo.dev] WebSocket client connected. Total clients: 1

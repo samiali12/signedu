@@ -50,8 +50,8 @@ const Lessons = ({ heading, lessons, subheading }: Props) => {
                   </span>
                 </div>
                 <p className="text-gray-400 text-sm">{lesson.description}</p>
-                <p className="text-gray-600 text-xs mt-2">
-                  {lesson.signs.length} signs
+                <p className="text-gray-600 text-xs mt-2 flex">
+                  {lesson.signs.length} <p className="pl-1">signs</p>
                 </p>
               </div>
               <ChevronRight
