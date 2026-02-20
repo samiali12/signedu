@@ -1,7 +1,7 @@
+import { cookies } from "next/headers";
 import Lesson from "@/components/lessons/Lesson";
 import { LESSONS } from "@/data/lesson";
 import { translateMany } from "@/lib/translate";
-import { cookies } from "next/headers";
 
 export default async function page({ params }: { params: { id: string } }) {
   const { id } = await params;
