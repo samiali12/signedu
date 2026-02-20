@@ -44,6 +44,20 @@
     "ea6cf7c730dd": "Obtuviste <span0>{score}</span0> de <span1>{expression0}</span1>",
     "8efa18ec4636": "Obtuviste {score} de <span0>{expression0}</span0>",
     "03640657bed5": "Obtuviste {score} de {expression0}",
-    "a7b0afaf89e4": "Obtuviste {score} de {expression0}{percent}%"
+    "a7b0afaf89e4": "Obtuviste {score} de {expression0}{percent}%",
+    "c9712b736796": "Práctica",
+    "b141b499d167": "Práctica de señas",
+    "613b32e6c6b9": "Muestra la seña con tu mano frente a la cámara.",
+    "88c93b026052": "señas completadas",
+    "8a9fd9bd5ae2": "Acceso a la cámara denegado",
+    "9dac6bc18873": "Por favor, permite el acceso a la cámara para usar esta función.",
+    "dda5373c4a90": "Iniciando cámara...",
+    "21882c0ef7b8": "Mano detectada",
+    "f18e172a4b74": "Sin mano",
+    "16505c08efec": "{expression0}%",
+    "966c48c844d0": "¡Seña reconocida! 🎉",
+    "2eff093b4b8d": "text= {expression0}",
+    "257ff1a66a7f": "Mantén la seña firme para confirmar...",
+    "9e645b74e01f": "Cola de práctica"
   }
 }

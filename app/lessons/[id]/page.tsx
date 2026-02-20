@@ -17,7 +17,7 @@ export default async function page({ params }: { params: { id: string } }) {
     );
   }
 
-  const [title, signOfText] = await translateMany(
+  const [title] = await translateMany(
     [lesson.title, `Sign {index} of {total}`],
     locale,
   );

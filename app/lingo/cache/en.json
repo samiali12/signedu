@@ -30,6 +30,20 @@
     "eeac9fa578e5": "You scored <span0>{score}</span0> out of <span1>{expression0} ({percent}%)</span1>",
     "ea6cf7c730dd": "You scored <span0>{score}</span0> out of <span1>{expression0}</span1>",
     "8efa18ec4636": "You scored {score} out of <span0>{expression0}</span0>",
-    "03640657bed5": "You scored {score} out of {expression0}"
+    "03640657bed5": "You scored {score} out of {expression0}",
+    "b141b499d167": "Sign Practice",
+    "613b32e6c6b9": "Show the sign with your hand in front of the camera.",
+    "88c93b026052": "signs done",
+    "8a9fd9bd5ae2": "Camera access denied",
+    "9dac6bc18873": "Please allow camera access to use this feature.",
+    "dda5373c4a90": "Starting camera...",
+    "f18e172a4b74": "No Hand",
+    "21882c0ef7b8": "Hand Detected",
+    "16505c08efec": "{expression0}%",
+    "966c48c844d0": "Sign Recognized! 🎉",
+    "af436bb3b9a1": "text={expression0}",
+    "2eff093b4b8d": "text= {expression0}",
+    "257ff1a66a7f": "Hold the sign steady to confirm...",
+    "9e645b74e01f": "Practice Queue"
   }
 }
