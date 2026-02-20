@@ -9408,3 +9408,32 @@
 2026-02-20T14:43:27.383Z [DEBUG] [Lingo.dev] 🔄 Hashes: 2862c9e1b2e4, cd61a944cf48
 2026-02-20T14:43:27.401Z [DEBUG] [Lingo.dev] [BUSY] Server is now busy (1 active)
 2026-02-20T14:43:27.468Z [DEBUG] [Lingo.dev] [IDLE] Server is now idle
+2026-02-20T14:46:03.415Z [INFO] [Lingo.dev] 🔧 Initializing translator...
+2026-02-20T14:46:03.537Z [DEBUG] [Lingo.dev] Starting translation server on port 60000
+2026-02-20T14:46:03.592Z [INFO] [Lingo.dev] Translation server listening on http://127.0.0.1:60000
+2026-02-20T14:46:03.594Z [INFO] [Lingo.dev] WebSocket server initialized
+2026-02-20T14:46:03.596Z [DEBUG] [Lingo.dev] Reloaded metadata: 30 entries
+2026-02-20T14:46:03.597Z [DEBUG] [Lingo.dev] Reloaded metadata: 30 entries
+2026-02-20T14:46:03.598Z [DEBUG] [Lingo.dev] Reloaded metadata: 30 entries
+2026-02-20T14:46:03.600Z [DEBUG] [Lingo.dev] Reloaded metadata: 30 entries
+2026-02-20T14:46:03.601Z [DEBUG] [Lingo.dev] Reloaded metadata: 30 entries
+2026-02-20T14:46:03.602Z [INFO] [Lingo.dev] Translating all 30 entries to ja
+2026-02-20T14:46:03.603Z [INFO] [Lingo.dev] Translating all 30 entries to es
+2026-02-20T14:46:03.604Z [INFO] [Lingo.dev] Translating all 30 entries to fr
+2026-02-20T14:46:03.605Z [INFO] [Lingo.dev] Translating all 30 entries to de
+2026-02-20T14:46:03.607Z [INFO] [Lingo.dev] Translating all 30 entries to ar
+2026-02-20T14:51:28.669Z [INFO] [Lingo.dev] 🔧 Initializing translator...
+2026-02-20T14:51:28.748Z [DEBUG] [Lingo.dev] Starting translation server on port 60000
+2026-02-20T14:51:28.782Z [INFO] [Lingo.dev] Translation server listening on http://127.0.0.1:60000
+2026-02-20T14:51:28.784Z [INFO] [Lingo.dev] WebSocket server initialized
+2026-02-20T14:51:28.785Z [DEBUG] [Lingo.dev] Reloaded metadata: 30 entries
+2026-02-20T14:51:28.793Z [DEBUG] [Lingo.dev] Reloaded metadata: 30 entries
+2026-02-20T14:51:28.795Z [DEBUG] [Lingo.dev] Reloaded metadata: 30 entries
+2026-02-20T14:51:28.797Z [DEBUG] [Lingo.dev] Reloaded metadata: 30 entries
+2026-02-20T14:51:28.798Z [DEBUG] [Lingo.dev] Reloaded metadata: 30 entries
+2026-02-20T14:51:28.800Z [INFO] [Lingo.dev] Translating all 30 entries to ja
+2026-02-20T14:51:28.801Z [INFO] [Lingo.dev] Translating all 30 entries to es
+2026-02-20T14:51:28.802Z [INFO] [Lingo.dev] Translating all 30 entries to fr
+2026-02-20T14:51:28.806Z [INFO] [Lingo.dev] Translating all 30 entries to de
+2026-02-20T14:51:28.807Z [INFO] [Lingo.dev] Translating all 30 entries to ar
+2026-02-20T14:51:40.943Z [INFO] [Lingo.dev] Translation server stopped
