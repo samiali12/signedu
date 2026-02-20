@@ -1,7 +1,7 @@
-import Lessons from "@/components/lessons/Lessons";
-import { LESSONS } from "@/data/lesson";
-import { translateMany } from "@/lib/translate";
 import { cookies } from "next/headers";
+import { LESSONS } from "@/data/lesson";
+import Lessons from "@/components/lessons/Lessons";
+import { translateMany } from "@/lib/translate";
 
 export default async function page() {
   const cookiesStore = await cookies();
