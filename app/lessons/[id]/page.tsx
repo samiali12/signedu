@@ -34,7 +34,7 @@ export default async function page({ params }: { params: { id: string } }) {
         word,
         description,
         quizOptions,
-        correctAnswer: quizOptions.find((q) => q === sign.correctAnswer), // last one was correctAnswer
+        correctAnswer: quizOptions.find((q) => q === sign.correctAnswer) || '', // last one was correctAnswer
       };
     }),
   );

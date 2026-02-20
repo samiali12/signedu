@@ -6,7 +6,7 @@ import { useState } from "react";
 
 type Sign = {
   id: string;
-  videoUrl: string;
+  videoUrl?: string;
   word: string;
   description: string;
   quizOptions: string[];
