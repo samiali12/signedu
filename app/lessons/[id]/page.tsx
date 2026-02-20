@@ -1,7 +1,7 @@
 import { cookies } from "next/headers";
-import Lesson from "../../../components/lessons/Lesson";
 import { LESSONS } from "@/data/lesson";
 import { translateMany } from "@/lib/translate";
+import Lesson from "@/components/lessons/Lesson";
 
 export default async function page({ params }: { params: { id: string } }) {
   const { id } = await params;
@@ -25,7 +25,7 @@ export default async function page({ params }: { params: { id: string } }) {
   const translatedSigns = await Promise.all(
     lesson.signs.map(async (sign) => {
       const [word, description, ...quizOptions] = await translateMany(
-        [sign.word, sign.description, ...sign.quizOptions, sign.correctAnswer],
+        [sign.word, sign.description, ...sign.quizOptions],
         locale,
       );
 
@@ -34,7 +34,7 @@ export default async function page({ params }: { params: { id: string } }) {
         word,
         description,
         quizOptions,
-        correctAnswer: quizOptions[quizOptions.length - 1], // last one was correctAnswer
+        correctAnswer: quizOptions.find((q) => q === sign.correctAnswer), // last one was correctAnswer
       };
     }),
   );

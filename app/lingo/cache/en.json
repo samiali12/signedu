@@ -44,6 +44,22 @@
     "af436bb3b9a1": "text={expression0}",
     "2eff093b4b8d": "text= {expression0}",
     "257ff1a66a7f": "Hold the sign steady to confirm...",
-    "9e645b74e01f": "Practice Queue"
+    "9e645b74e01f": "Practice Queue",
+    "94b9f9f52fa9": "Lesson not found.",
+    "b24f016ea03b": "Lesson Complete!",
+    "425918ee2cc4": "You scored {score} out of {expression0}{percent}%",
+    "1cabcb47cff7": "Try Again",
+    "d19bf32bb996": "All Lessons",
+    "549a339ce2bf": "{score} pts",
+    "9ab9060ebe43": "🤟",
+    "e623e9856280": "Which sign is being shown?",
+    "0ba2e78b19a5": "Correct! Great job!",
+    "b114ee3171ab": "Next",
+    "fa5bce338234": "<span0>Sign</span0>{expression0} of {expression1}",
+    "f971a3a4315d": "Sign {expression0} of {expression1}",
+    "812a1d189979": "Lesson not found.",
+    "ff691b61ffe1": "You scored {score} out of {expression0} {percent}%",
+    "6e5618bd2d8b": "You scored {score} out of {expression0} ({percent}%",
+    "89ff8d388b61": "You scored {score} out of {expression0} ({percent}%)"
   }
 }

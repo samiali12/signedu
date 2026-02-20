@@ -68,6 +68,11 @@
     "b114ee3171ab": "Siguiente",
     "b24f016ea03b": "¡Lección completada!",
     "d19bf32bb996": "Todas las lecciones",
-    "e623e9856280": "¿Qué seña se está mostrando?"
+    "e623e9856280": "¿Qué seña se está mostrando?",
+    "5236da64bfd1": "Firmar",
+    "fa5bce338234": "<span0>Firmar</span0>{expression0} de {expression1}",
+    "cd285d39d76b": "<span0></span0>{expression0} de {expression1}",
+    "f971a3a4315d": "Firma {expression0} de {expression1}",
+    "b832f4df3cec": "pts"
   }
 }
