@@ -1,3 +1,18 @@
+export const LANGUAGES = [
+  { code: "en" as const, label: "English",    flag: "🇺🇸", region: "Global" },
+  { code: "ja" as const, label: "日本語",      flag: "🇯🇵", region: "Japan" },
+  { code: "es" as const, label: "Español",    flag: "🇪🇸", region: "Spain" },
+  { code: "fr" as const, label: "Français",   flag: "🇫🇷", region: "France" },
+  { code: "de" as const, label: "Deutsch",    flag: "🇩🇪", region: "Germany" },
+  { code: "ar" as const, label: "العربية",    flag: "🇸🇦", region: "Arabic" },
+  { code: "zh" as const, label: "中文",        flag: "🇨🇳", region: "China" },
+  { code: "pt" as const, label: "Português",  flag: "🇧🇷", region: "Brazil" },
+  { code: "ko" as const, label: "한국어",      flag: "🇰🇷", region: "Korea" },
+  { code: "hi" as const, label: "हिन्दी",     flag: "🇮🇳", region: "India" },
+  { code: "it" as const, label: "Italiano",   flag: "🇮🇹", region: "Italy" },
+  { code: "ru" as const, label: "Русский",    flag: "🇷🇺", region: "Russia" },
+];
+
 export const BADGE_META: Record<string, { label: string; emoji: string; desc: string }> = {
   first_sign:       { emoji: "🌱", label: "First Sign",       desc: "Learned your first sign" },
   sign_rookie:      { emoji: "🤙", label: "Sign Rookie",      desc: "Learned 10 signs" },

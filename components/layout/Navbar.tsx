@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { HandMetal } from "lucide-react";
-import LanguageSwitcher from "../LanguageSwitcher";
+import LanguageSwitcher from "../shared/LanguageSwitcher";
 import { translateText } from "@/lib/translate";
 import { cookies } from "next/headers";
 

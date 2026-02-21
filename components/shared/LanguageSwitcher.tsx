@@ -3,17 +3,9 @@
 import { useState } from "react";
 import { Globe } from "lucide-react";
 import { useLingoContext } from "@lingo.dev/compiler/react";
+import { LANGUAGES } from "@/constant/constant";
 
-const LANGUAGES = [
-  { code: "en" as const, label: "English" },
-  { code: "ja" as const, label: "日本語" },
-  { code: "es" as const, label: "Español" },
-  { code: "fr" as const, label: "Français" },
-  { code: "de" as const, label: "Deutsch" },
-  { code: "ar" as const, label: "العربية" },
-];
-
-export default function LanguageSwitcher() {
+const LanguageSwitcher = () => {
   const { locale, setLocale } = useLingoContext();
   const [open, setOpen] = useState(false);
 
@@ -46,4 +38,6 @@ export default function LanguageSwitcher() {
       )}
     </div>
   );
-}
+};
+
+export default LanguageSwitcher;
