@@ -8,6 +8,8 @@ const navbarLinks = [
   { name: "Lessons", href: "/lessons" },
   { name: "Practice", href: "/practice" },
   { name: "Sign Jam", href: "/jam" },
+  { name: "Leaderboard", href: "/leaderboard" },
+  { name: "Profile", href: "/profile" },
 ];
 
 const Navbar = async () => {

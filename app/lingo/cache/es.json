@@ -73,6 +73,10 @@
     "fa5bce338234": "<span0>Firmar</span0>{expression0} de {expression1}",
     "cd285d39d76b": "<span0></span0>{expression0} de {expression1}",
     "f971a3a4315d": "Firma {expression0} de {expression1}",
-    "b832f4df3cec": "pts"
+    "b832f4df3cec": "pts",
+    "8d0c6c4a2426": "N.º {myRank}",
+    "b72910243572": "{expression0} pts",
+    "3609b9a955d2": "#",
+    "4e48315f9915": "🏆"
   }
 }
