@@ -14,5 +14,6 @@ export default withLingo(nextConfig, {
   models: 'lingo.dev',
   dev: {
     usePseudotranslator: false
-  }
+  },
+  buildMode: 'cache-only'
 })
