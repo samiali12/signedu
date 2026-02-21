@@ -1,22 +1,14 @@
 "use client";
 
-import useTranslate from "@/hooks/useTranslate";
-import { CheckCheck, Copy, Hand, RefreshCw, Send, Users } from "lucide-react";
-import { useEffect, useRef, useState } from "react";
-
-type JamMessage = {
-  user: string;
-  sign: string;
-  emoji: string;
-  translatedSign: string;
-  timestamp: number;
-};
-
-type DetectedSign = {
-  word: string;
-  emoji: string;
-  detect: (lm: number[][]) => boolean;
-};
+import { pusherClient } from "@/lib/pusher";
+import { DetectedSign, JamMessage } from "@/types/jamesign";
+import { countFingers, generateGuestName } from "@/utils/jameSign";
+import axios from "axios";
+import { CheckCheck, Copy, Hand, RefreshCw } from "lucide-react";
+import { useCallback, useEffect, useRef, useState } from "react";
+import JameSignLobby from "./JameSignLobby";
+import JamMessageRow from "./JamMessageRow";
+import T from "../shared/T";
 
 const JAM_SIGNS: DetectedSign[] = [
   { word: "Hello", emoji: "👋", detect: (lm) => countFingers(lm) >= 4 },
@@ -27,97 +19,7 @@ const JAM_SIGNS: DetectedSign[] = [
   { word: "Fist", emoji: "✊", detect: (lm) => countFingers(lm) === 0 },
 ];
 
-const countFingers = (lm: number[][]): number => {
-  if (!lm || lm.length < 21) return -1;
-  const tips = [8, 12, 16, 20];
-  const mids = [6, 10, 14, 18];
-  let count = 0;
-  for (let i = 0; i < 4; i++) {
-    if (lm[tips[i]][1] < lm[mids[i]][1]) count++;
-  }
-  if (Math.abs(lm[4][0] - lm[2][0]) > 0.05) count++;
-  return count;
-};
-
-const generateRoomId = () => {
-  return Math.random().toString(36).substring(2, 8).toUpperCase();
-};
-
-const generateGuestName = () => {
-  const adjectives = ["Swift", "Brave", "Calm", "Bright", "Kind"];
-  const nouns = ["Signer", "Learner", "Wizard", "Coder", "Hand"];
-  return `${adjectives[Math.floor(Math.random() * adjectives.length)]}${nouns[Math.floor(Math.random() * nouns.length)]}`;
-};
-
-const Lobby = ({
-  onJoin,
-}: {
-  onJoin: (roomId: string, userName: string) => void;
-}) => {
-  const [inputRoom, setInputRoom] = useState("");
-  const [userName, setUserName] = useState(generateGuestName());
-  const heading = useTranslate("Sign Jam");
-  const subheading = useTranslate(
-    "Practice signing with people around the world in real-time.",
-  );
-
-  return (
-    <div className="flex flex-col items-center gap-10 py-16 max-w-md mx-auto text-center">
-      <div>
-        <div className="bg-indigo-600 p-4 rounded-2xl inline-flex mb-4">
-          <Users size={40} className="text-white" />
-        </div>
-        <h1 className="text-4xl font-extrabold text-white mb-2">{heading}</h1>
-        <p className="text-gray-400">{subheading}</p>
-      </div>
-
-      <div className="w-full flex flex-col gap-4">
-        <div className="text-left">
-          <label className="text-gray-400 text-sm mb-1 block">Your Name</label>
-          <input
-            value={userName}
-            onChange={(e) => setUserName(e.target.value)}
-            className="w-full bg-gray-900 border border-gray-700 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-indigo-500 transition"
-            placeholder="Guest name"
-          />
-          <button
-            onClick={() => onJoin(generateRoomId(), userName)}
-            className="mt-2 w-full bg-indigo-600 hover:bg-indigo-500 text-white py-3 rounded-xl font-semibold transition flex items-center justify-center gap-2"
-          >
-            <Hand size={18} />
-            Create New Room
-          </button>
-
-          <div className="mt-2 flex items-center gap-3 text-gray-600">
-            <div className="flex-1 h-px bg-gray-800" />
-            <span className="text-sm">or join existing</span>
-            <div className="flex-1 h-px bg-gray-800" />
-          </div>
-
-          <div className="flex gap-2 mt-2">
-            <input
-              value={inputRoom}
-              onChange={(e) => setInputRoom(e.target.value.toUpperCase())}
-              className="flex-1 bg-gray-900 border border-gray-700 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-indigo-500 transition uppercase tracking-widest font-mono"
-              placeholder="ROOM CODE"
-              maxLength={6}
-            />
-            <button
-              onClick={() =>
-                inputRoom.length >= 4 && onJoin(inputRoom, userName)
-              }
-              className="bg-gray-800 hover:bg-gray-700 text-white px-4 py-3 rounded-xl font-semibold transition"
-            >
-              <Send size={18} />
-            </button>
-          </div>
-        </div>
-      </div>
-    </div>
-  );
-};
-
-const Jam = () => {
+const JamSign = () => {
   const [roomId, setRoomId] = useState<string | null>(null);
   const [userName, setUserName] = useState("");
   const [messages, setMessages] = useState<JamMessage[]>([]);
@@ -141,7 +43,66 @@ const Jam = () => {
   const feedRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    // if (!roomId) return;
+    if (!roomId) return;
+    const channel = pusherClient.subscribe(`jam-${roomId}`);
+    channel.bind(
+      "sign-event",
+      (
+        message: Omit<JamMessage, "translatedSign"> & {
+          translatedSign: string;
+        },
+      ) => {
+        const bindMessage = async () => {
+          const text = message.sign;
+          console.log("full mesage ==> ", message);
+          try {
+            const response = await axios.post("/api/translate", {
+              text,
+              locale: "es",
+            });
+            const translatedSign = response.data.translated;
+            const newMessage: JamMessage = {
+              ...message,
+              user: message.user,
+              timestamp: new Date(),
+              translatedSign,
+            };
+            console.log("new message ==> ", newMessage);
+            setMessages((prev) => [...prev.slice(-49), newMessage]);
+          } catch (error) {
+            console.log(error);
+          }
+        };
+        bindMessage();
+      },
+    );
+  }, [messages, roomId]);
+
+  const sendSign = useCallback(
+    async (sign: DetectedSign) => {
+      if (!roomId || cooldown) return;
+      setCooldown(true);
+      setLastSent(sign.word);
+      setTimeout(() => {
+        setCooldown(false);
+        setLastSent(null);
+      }, COOLDOWN_MS);
+      try {
+        await axios.post("/api/jam/send", {
+          roomId,
+          user: userName,
+          sign: sign.word,
+          translatedSign: sign.word,
+        });
+      } catch (error) {
+        console.log(error);
+      }
+    },
+    [cooldown, roomId, userName],
+  );
+
+  useEffect(() => {
+    if (!roomId) return;
     let camera: { start: () => void; stop: () => void } | null = null;
 
     const initMediaPipe = async () => {
@@ -215,7 +176,7 @@ const Jam = () => {
               if (elapsed >= HOLD_MS) {
                 holdStart.current = null;
                 setHoldProgress(0);
-                //sendSign(matched);
+                sendSign(matched);
               }
             } else if (!matched) {
               holdStart.current = null;
@@ -252,7 +213,7 @@ const Jam = () => {
     };
 
     initMediaPipe();
-  }, [cooldown, roomId]);
+  }, [cooldown, roomId, sendSign]);
 
   const copyRoomCode = () => {
     if (!roomId) return;
@@ -267,14 +228,17 @@ const Jam = () => {
     setMessages([]);
   };
 
-  if (!roomId) return <Lobby onJoin={handleJoinRoom} />;
+  if (!roomId) return <JameSignLobby onJoin={handleJoinRoom} />;
 
   return (
-    <div className="flex flex-col gap-4 h-[calc(100vh-80px)] mt-16 pt-10">
+    <div className="flex flex-col gap-4 h-[calc(100vh-80px)] mt-12 py-10">
+      {/* Room header */}
       <div className="flex items-center justify-between bg-gray-900 border border-gray-800 rounded-2xl px-5 py-3">
         <div className="flex items-center gap-3">
           <div className="w-3 h-3 bg-green-400 rounded-full animate-pulse" />
-          <span className="text-white font-semibold">Room</span>
+          <span className="text-white font-semibold">
+            <T text="Room" />
+          </span>
           <code className="bg-indigo-950 border border-indigo-800 text-indigo-300 px-3 py-1 rounded-lg font-mono font-bold tracking-widest text-sm">
             {roomId}
           </code>
@@ -287,11 +251,13 @@ const Jam = () => {
             ) : (
               <Copy size={14} />
             )}
-            {copied ? <span>Copied!</span> : <span>Copy</span>}
+            {copied ? <T text="Copied!" /> : <T text="Copy" />}
           </button>
         </div>
         <div className="flex items-center gap-3">
-          <span className="text-gray-400 text-sm">Signing as {userName}</span>
+          <span className="text-gray-400 text-sm">
+            <T text={`Signing as ${userName}`} />
+          </span>
           <button
             onClick={() => {
               setRoomId(null);
@@ -300,12 +266,14 @@ const Jam = () => {
             className="text-gray-500 hover:text-red-400 transition text-xs flex items-center gap-1"
           >
             <RefreshCw size={13} />
-            <span>Leave</span>
+            <T text="Leave" />
           </button>
         </div>
       </div>
 
+      {/* Main grid */}
       <div className="flex-1 grid grid-cols-1 lg:grid-cols-2 gap-4 min-h-0">
+        {/* Left: webcam */}
         <div className="flex flex-col gap-3">
           <div className="relative bg-gray-900 border border-gray-800 rounded-2xl overflow-hidden aspect-video flex items-center justify-center">
             <video
@@ -315,20 +283,23 @@ const Jam = () => {
               playsInline
               muted
             />
+
             {!cameraReady && !cameraError && (
               <div className="flex flex-col items-center gap-3 absolute inset-0 justify-center">
                 <div className="w-8 h-8 border-2 border-indigo-500 border-t-transparent rounded-full animate-spin" />
-                <p className="text-gray-400 text-sm">Starting camera...</p>
+                <p className="text-gray-400 text-sm">
+                  <T text="Starting camera..." />
+                </p>
               </div>
             )}
 
             {cameraError && (
               <div className="absolute inset-0 flex flex-col items-center justify-center gap-2 p-6 text-center">
                 <p className="text-red-400 font-semibold">
-                  Camera access denied
+                  <T text="Camera access denied" />
                 </p>
                 <p className="text-gray-500 text-sm">
-                  Enable camera to sign in the jam.
+                  <T text="Enable camera to sign in the jam." />
                 </p>
               </div>
             )}
@@ -340,6 +311,7 @@ const Jam = () => {
               className="w-full h-full object-cover"
             />
 
+            {/* Status badge */}
             {cameraReady && (
               <div
                 className={`absolute top-3 left-3 flex items-center gap-2 px-3 py-1.5 rounded-full text-xs font-semibold
@@ -349,13 +321,14 @@ const Jam = () => {
                   className={`w-2 h-2 rounded-full ${handDetected ? "bg-green-400 animate-pulse" : "bg-gray-500"}`}
                 />
                 {handDetected ? (
-                  <span>Hand Detected</span>
+                  <T text="Hand Detected" />
                 ) : (
-                  <span>No Hand</span>
+                  <T text="No Hand" />
                 )}
               </div>
             )}
 
+            {/* Current detected sign badge */}
             {currentDetected && !cooldown && (
               <div className="absolute top-3 right-3 bg-indigo-900 border border-indigo-600 px-3 py-1.5 rounded-full text-xs font-semibold text-indigo-200 flex items-center gap-2">
                 <span>{currentDetected.emoji}</span>
@@ -363,6 +336,7 @@ const Jam = () => {
               </div>
             )}
 
+            {/* Hold progress ring */}
             {holdProgress > 0 && (
               <div className="absolute bottom-3 right-3 w-14 h-14">
                 <svg viewBox="0 0 36 36" className="w-14 h-14 -rotate-90">
@@ -390,6 +364,58 @@ const Jam = () => {
                 </div>
               </div>
             )}
+
+            {/* Sent confirmation flash */}
+            {cooldown && lastSent && (
+              <div className="absolute bottom-3 left-3 bg-green-900 border border-green-600 px-4 py-2 rounded-xl text-green-300 text-sm font-semibold flex items-center gap-2">
+                <span>✅</span>
+                <T text={`Sent: ${lastSent}`} />
+              </div>
+            )}
+          </div>
+
+          {/* Instructions */}
+          <div className="bg-gray-900 border border-gray-800 rounded-xl px-4 py-3 text-sm text-gray-400 text-center">
+            <T text="Hold any sign steady for 1.5 seconds to send it to the room." />
+          </div>
+        </div>
+
+        {/* Right: chat feed */}
+        <div className="flex flex-col bg-gray-900 border border-gray-800 rounded-2xl overflow-hidden">
+          <div className="px-4 py-3 border-b border-gray-800 flex items-center gap-2">
+            <Hand size={16} className="text-indigo-400" />
+            <span className="text-white font-semibold text-sm">
+              <T text="Sign Feed" />
+            </span>
+            <span className="bg-gray-800 text-gray-400 text-xs px-2 py-0.5 rounded-full ml-auto">
+              {messages.length} <T text="signs" />
+            </span>
+          </div>
+
+          {/* Messages */}
+          <div
+            ref={feedRef}
+            className="flex-1 overflow-y-auto p-4 flex flex-col gap-4 min-h-0"
+          >
+            {messages.length === 0 ? (
+              <div className="flex-1 flex flex-col items-center justify-center text-center gap-3 text-gray-600">
+                <span className="text-4xl">🤟</span>
+                <p className="text-sm">
+                  <T text="No signs yet. Be the first to sign!" />
+                </p>
+                <p className="text-xs">
+                  <T text="Share the room code with a friend to practice together." />
+                </p>
+              </div>
+            ) : (
+              messages.map((msg, i) => (
+                <JamMessageRow
+                  key={i}
+                  msg={msg}
+                  isOwn={msg.user === userName}
+                />
+              ))
+            )}
           </div>
         </div>
       </div>
@@ -397,4 +423,4 @@ const Jam = () => {
   );
 };
 
-export default Jam;
+export default JamSign;
