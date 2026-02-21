@@ -1,12 +1,19 @@
-import { NextRequest } from "next/server";
+import { translateText } from "@/lib/translate";
 
-export async function POST(request: NextRequest) {
-    const {text, setLanguage} = await request.json();
+export async function POST(request: Request) {
 
-    try{
+    try {
+        const { text, locale } = await request.json();
+        const translated = await translateText(text, locale)
+        return Response.json({
+            translated
+        })
 
-        
-    }catch(error){
-        console.log(error)
+    } catch (error) {
+        console.error("TRANSLATE API ERROR:", error);
+        return Response.json(
+            { error: "Translation failed" },
+            { status: 500 }
+        );
     }
 }

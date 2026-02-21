@@ -60,6 +60,25 @@
     "812a1d189979": "Lesson not found.",
     "ff691b61ffe1": "You scored {score} out of {expression0} {percent}%",
     "6e5618bd2d8b": "You scored {score} out of {expression0} ({percent}%",
-    "89ff8d388b61": "You scored {score} out of {expression0} ({percent}%)"
+    "89ff8d388b61": "You scored {score} out of {expression0} ({percent}%)",
+    "9a35afe97aea": "Learn Sign Language <br0></br0><span0>In Your Language</span0>",
+    "e54f7336452e": "Room",
+    "cad603a790ef": "Copied!",
+    "71935a9323b5": "Copy",
+    "0f8808313e0f": "Signing as {userName}<T0></T0>",
+    "18d43e799960": "Leave",
+    "597b414f7ee1": "Signing as {userName}",
+    "48d67148a702": "Starting camera...",
+    "48b07b89a397": "Camera access denied",
+    "f3539bfbfea5": "Enable camera to sign in the jam.",
+    "bd24b38e5925": "Hand Detected",
+    "a72dcff94bdd": "No Hand",
+    "e512ee371b03": "{expression0}%",
+    "1541abfbd2c0": "Your Name",
+    "2d19c95e7019": "Guest name",
+    "925e749401df": "className=\"w-full bg-indigo-600 hover:bg-indigo-500 text-white py-3 rounded-xl font-semibold transition flex items-center justify-center gap-2\"",
+    "4460f1441843": "Create New Room",
+    "febe22d9b950": "or join existing",
+    "0544e26017e0": "ROOM CODE"
   }
 }

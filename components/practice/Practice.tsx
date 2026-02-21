@@ -65,7 +65,7 @@ const Practice = ({ practice_sign }: PracticeProps) => {
         );
         const { HAND_CONNECTIONS } = await import("@mediapipe/hands");
 
-        if (!videoRef.current) return;
+        if (!videoRef.current || !canvasRef.current) return;
 
         const hands = new Hands({
           locateFile: (file: string) =>
