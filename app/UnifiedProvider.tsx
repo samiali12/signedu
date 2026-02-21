@@ -1,3 +1,5 @@
+"use client";
+
 import { LanguageContextProvider } from "@/context/LanguageContext";
 import { LingoProvider } from "@lingo.dev/compiler/react";
 

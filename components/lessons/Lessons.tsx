@@ -10,7 +10,7 @@ type Props = {
 
 const Lessons = ({ heading, lessons, subheading }: Props) => {
   return (
-    <div className="flex flex-col gap-8 p-6 md:p-10 mt-16">
+    <div className="flex flex-col gap-8 p-6 md:p-10 mt-10 py-16">
       <div className="flex items-center gap-3">
         <BookOpen size={32} className="text-indigo-400" />
         <div>

@@ -1,11 +1,12 @@
 "use client";
+
 import Link from "next/link";
 import { HandMetal, BookOpen, Users, Trophy } from "lucide-react";
 import T from "../shared/T";
 
 const Hero = () => {
   return (
-    <div className="flex flex-col items-center text-center gap-10 py-16">
+    <div className="flex flex-col items-center text-center gap-10 mt-10 py-16">
       <div className="flex flex-col items-center gap-4">
         <div className="bg-indigo-600 p-4 rounded-2xl">
           <HandMetal size={52} className="text-white" />
@@ -89,7 +90,7 @@ const Hero = () => {
             desc: "Practice with learners worldwide. Signs are auto-translated for every participant.",
             color: "from-fuchsia-600 to-fuchsia-800",
           },
-        ].map(async ({ title, desc, color }) => (
+        ].map(({ title, desc, color }) => (
           <div
             key={title}
             className={`bg-linear-to-br ${color} rounded-2xl p-6 text-left`}
