@@ -3,6 +3,7 @@
 import { countFingersUp } from "@/data/practice";
 import { Camera, CheckCircle, Hand, RefreshCw } from "lucide-react";
 import { useCallback, useEffect, useRef, useState } from "react";
+import T from "../shared/T";
 
 export interface PracticeSign {
   id: string;
@@ -191,7 +192,7 @@ const Practice = ({ practice_sign }: PracticeProps) => {
             <p>Sign Practice</p>
           </h1>
           <p className="text-gray-400 text-sm mt-1">
-            <p>Show the sign with your hand in front of the camera.</p>
+            <T text="Show the sign with your hand in front of the camera." />
           </p>
         </div>
         <div className="bg-indigo-950 border border-indigo-800 px-5 py-3 rounded-xl text-center">
