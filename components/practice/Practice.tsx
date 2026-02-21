@@ -4,7 +4,7 @@ import { countFingersUp } from "@/data/practice";
 import { Camera, CheckCircle, Hand, RefreshCw } from "lucide-react";
 import { useCallback, useEffect, useRef, useState } from "react";
 
-interface PracticeSign {
+export interface PracticeSign {
   id: string;
   word: string;
   instruction: string;
@@ -12,7 +12,7 @@ interface PracticeSign {
   detect: (landmarks: number[][]) => boolean;
 }
 
-interface PracticeProps {
+export interface PracticeProps {
   practice_sign: Omit<PracticeSign, "detect">[]; // functions removed for server
 }
 
@@ -183,7 +183,7 @@ const Practice = ({ practice_sign }: PracticeProps) => {
   }, [currentSignIndex, signsWithDetect.length]);
 
   return (
-    <div className="flex flex-col gap-8 p-6 md:p-10 mt-16">
+    <div className="flex flex-col gap-8 p-6 md:p-10 mt-12">
       <div className="flex items-center justify-between">
         <div>
           <h1 className="text-3xl font-extrabold text-white flex items-center gap-3">

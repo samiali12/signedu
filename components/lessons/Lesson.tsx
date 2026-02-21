@@ -1,31 +1,12 @@
 "use client";
 
+import { LessonType } from "@/types/lesson";
 import { CheckCircle, ChevronRight, Trophy, XCircle } from "lucide-react";
 import { useRouter } from "next/navigation";
 import { useState } from "react";
 
-type Sign = {
-  id: string;
-  videoUrl?: string;
-  word: string;
-  description: string;
-  quizOptions: string[];
-  correctAnswer: string;
-  // ... other fields
-};
-
-type Lesson = {
-  id: string;
-  title: string;
-  description: string;
-  emoji: string;
-  signs: Sign[];
-  level: string;
-  // ... other fields
-};
-
 type Props = {
-  lesson: Lesson;
+  lesson: LessonType;
   locale: string;
 };
 
@@ -73,7 +54,7 @@ const Lesson = ({ lesson }: Props) => {
             Lesson Complete!
           </h2>
           <p className="text-gray-400 text-lg">
-            You scored {score} out of {lesson.signs.length} {" "} ({percent}%)
+            You scored {score} out of {lesson.signs.length} ({percent}%)
           </p>
         </div>
         <div className="flex gap-4">
