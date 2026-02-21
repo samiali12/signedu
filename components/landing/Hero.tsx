@@ -29,13 +29,13 @@ const Hero = () => {
             href="/lessons"
             className="bg-indigo-600 hover:bg-indigo-500 text-white px-6 py-3 rounded-xl font-semibold transition"
           >
-            Start Learning
+            <T text={"Start Learning"} />
           </Link>
           <Link
             href="/jam"
             className="bg-gray-800 hover:bg-gray-700 text-white px-6 py-3 rounded-xl font-semibold transition"
           >
-            Join Sign Jam
+            <T text={"Join Sign Jam"} />
           </Link>
         </div>
       </div>

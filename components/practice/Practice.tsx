@@ -155,7 +155,7 @@ const Practice = () => {
         <div>
           <h1 className="text-3xl font-extrabold text-white flex items-center gap-3">
             <Hand size={32} className="text-indigo-400" />
-            <p>Sign Practice</p>
+            <T text={"Sign Practice"} />
           </h1>
           <p className="text-gray-400 text-sm mt-1">
             <T text="Show the sign with your hand in front of the camera." />
@@ -164,7 +164,7 @@ const Practice = () => {
         <div className="bg-indigo-950 border border-indigo-800 px-5 py-3 rounded-xl text-center">
           <div className="text-indigo-400 font-bold text-2xl">{score}</div>
           <div className="text-gray-500 text-xs">
-            <p>signs done</p>
+            <T text={"signs done"} />
           </div>
         </div>
       </div>
@@ -174,9 +174,11 @@ const Practice = () => {
           {cameraError ? (
             <div className="flex flex-col items-center gap-3 text-center p-6">
               <Camera size={40} className="text-red-400" />
-              <p className="text-red-400 font-semibold">Camera access denied</p>
+              <p className="text-red-400 font-semibold">
+                <T text={"Camera access denied"} />
+              </p>
               <p className="text-gray-500 text-sm">
-                Please allow camera access to use this feature.
+                <T text={"Please allow camera access to use this feature."} />
               </p>
             </div>
           ) : !cameraReady ? (
@@ -201,7 +203,11 @@ const Practice = () => {
               <div
                 className={`w-2 h-2 rounded-full ${handDetected ? "bg-green-400 animate-pulse" : "bg-gray-500"}`}
               />
-              {handDetected ? <span>Hand Detected</span> : <span>No Hand</span>}
+              {handDetected ? (
+                <T text={"Hand Detected"} />
+              ) : (
+                <T text={"No Hand"} />
+              )}
             </div>
           )}
 
@@ -260,17 +266,20 @@ const Practice = () => {
               <div className="flex flex-col items-center gap-3 w-full">
                 <div className="flex items-center gap-2 text-green-400 font-bold">
                   <CheckCircle size={22} />
-                  <p>Sign Recognized! 🎉</p>
+                  <p>
+                    <T text={"Sign Recognized!"} /> 🎉
+                  </p>
                 </div>
                 <button
                   onClick={handleNext}
                   className="w-full bg-indigo-600 hover:bg-indigo-500 text-white py-3 rounded-xl font-semibold transition flex items-center justify-center gap-2"
                 >
                   <p>
-                    text=
-                    {currentSignIndex + 1 < practice_sign.length
-                      ? "Next Sign"
-                      : "Restart"}
+                    {currentSignIndex + 1 < practice_sign.length ? (
+                      <T text={"Next Sign"} />
+                    ) : (
+                      <T text={"Restart"} />
+                    )}
                   </p>
                   <RefreshCw size={16} />
                 </button>
@@ -279,14 +288,14 @@ const Practice = () => {
           </div>
           {!signDetected && handDetected && (
             <p className="text-gray-500 text-xs">
-              Hold the sign steady to confirm...
+              <T text={"Hold the sign steady to confirm..."} />
             </p>
           )}
         </div>
 
         <div className="bg-gray-900 border border-gray-800 rounded-2xl p-4">
           <p className="text-gray-400 text-xs font-medium mb-3 uppercase tracking-wider">
-            Practice Queue
+            <T text={" Practice Queue"} />
           </p>
           <div className="flex flex-col gap-2">
             {practice_sign.map((sign, i) => (
