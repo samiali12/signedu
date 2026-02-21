@@ -13,6 +13,22 @@ export const LANGUAGES = [
   { code: "ru" as const, label: "Русский",    flag: "🇷🇺", region: "Russia" },
 ];
 
+export const FEATURES = [
+  { label: "Lessons",     href: "/lessons",     emoji: "📖" },
+  { label: "Practice",    href: "/practice",    emoji: "📷" },
+  { label: "Sign Jam",    href: "/jam",         emoji: "🎸" },
+  { label: "Leaderboard", href: "/leaderboard", emoji: "🏆" },
+  { label: "Profile",     href: "/profile",     emoji: "👤" },
+];
+
+export const TECH = [
+  { label: "Next.js",    href: "https://nextjs.org",     color: "text-white" },
+  { label: "MediaPipe",  href: "https://mediapipe.dev",  color: "text-green-400" },
+  { label: "Lingo.dev",  href: "https://lingo.dev",      color: "text-indigo-400" },
+  { label: "Pusher",     href: "https://pusher.com",     color: "text-purple-400" },
+  { label: "Vercel",     href: "https://vercel.com",     color: "text-gray-300" },
+];
+
 export const BADGE_META: Record<string, { label: string; emoji: string; desc: string }> = {
   first_sign:       { emoji: "🌱", label: "First Sign",       desc: "Learned your first sign" },
   sign_rookie:      { emoji: "🤙", label: "Sign Rookie",      desc: "Learned 10 signs" },
