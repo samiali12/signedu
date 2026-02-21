@@ -1,27 +1,27 @@
+"use client";
 import Link from "next/link";
 import { HandMetal, BookOpen, Users, Trophy } from "lucide-react";
-import { cookies } from "next/headers";
-import { translateText } from "@/lib/translate";
+import T from "../shared/T";
 
-const Hero = async () => {
-  const store = await cookies();
-  const locale = store.get("locale")?.value || "en";
-
+const Hero = () => {
   return (
     <div className="flex flex-col items-center text-center gap-10 py-16">
-      {/* Hero */}
       <div className="flex flex-col items-center gap-4">
         <div className="bg-indigo-600 p-4 rounded-2xl">
           <HandMetal size={52} className="text-white" />
         </div>
         <h1 className="text-5xl font-extrabold text-white leading-tight">
-          Learn Sign Language
+          <T text="Learn Sign Language" />
           <br />
-          <span className="text-indigo-400">In Your Language</span>
+          <span className="text-indigo-400">
+            <T text="In Your Language" />
+          </span>
         </h1>
         <p className="text-gray-400 text-lg max-w-xl">
-          Master ASL through interactive lessons, AI-powered feedback, and
-          real-time practice sessions — all localized to your native language.
+          <T
+            text="Master ASL through interactive lessons, AI-powered feedback, and
+          real-time practice sessions — all localized to your native language."
+          />
         </p>
         <div className="flex gap-4 mt-2">
           <Link
@@ -43,17 +43,17 @@ const Hero = async () => {
       <div className="grid grid-cols-3 gap-6 w-full max-w-2xl">
         {[
           {
-            label: await translateText("Lessons", locale),
+            label: "Lessons",
             value: "24+",
             icon: BookOpen,
           },
           {
-            label: await translateText("Languages", locale),
+            label: "Languages",
             value: "6",
             icon: Users,
           },
           {
-            label: await translateText("Signs Learned", locale),
+            label: "Signs Learned",
             value: "1.2k",
             icon: Trophy,
           },
@@ -64,7 +64,9 @@ const Hero = async () => {
           >
             <Icon size={28} className="text-indigo-400" />
             <p className="text-3xl font-bold text-white">{value}</p>
-            <p className="text-gray-400 text-sm">{label}</p>
+            <p className="text-gray-400 text-sm">
+              <T text={label} />
+            </p>
           </div>
         ))}
       </div>
@@ -93,10 +95,10 @@ const Hero = async () => {
             className={`bg-linear-to-br ${color} rounded-2xl p-6 text-left`}
           >
             <h3 className="font-bold text-lg text-white mb-2">
-              {await translateText(title, locale)}
+              <T text={title} />
             </h3>
             <p className="text-gray-200 text-sm">
-              {await translateText(desc, locale)}
+              <T text={desc} />
             </p>
           </div>
         ))}

@@ -7,19 +7,20 @@ const getLocale = () => {
 }
 
 const useTranslate = (text: string) => {
-    const [translated, setTranslated] = useState("");
+    const [translated, setTranslated] = useState(text);
 
     useEffect(() => {
         const run = async () => {
             const locale = getLocale();
-            if ('en' ==  locale) return text;
+            console.log("l ==> ", locale)
+            if ('en' ==  locale) return translated;
             const response = await axios.post("/api/translate", { text, locale })
             const data = response.data;
             setTranslated(data.translated);
         };
 
         run();
-    }, [text]);
+    }, [text, translated]);
 
     return translated;
 };
