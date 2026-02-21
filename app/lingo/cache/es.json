@@ -1,0 +1,22 @@
+{
+  "version": 0.1,
+  "locale": "es",
+  "entries": {
+    "0b054301b57d": "Seleccionar idioma",
+    "9426f7803679": "Todo el contenido se traduce automáticamente a través de <span0>Lingo.dev</span0>",
+    "b141b499d167": "Práctica de señas",
+    "88c93b026052": "señas completadas",
+    "8a9fd9bd5ae2": "Acceso a la cámara denegado",
+    "9dac6bc18873": "Por favor, permite el acceso a la cámara para usar esta función.",
+    "dda5373c4a90": "Iniciando cámara...",
+    "21882c0ef7b8": "Mano detectada",
+    "f18e172a4b74": "Sin mano",
+    "16505c08efec": "{expression0}%",
+    "966c48c844d0": "¡Seña reconocida! 🎉",
+    "2eff093b4b8d": "texto= {expression0}",
+    "257ff1a66a7f": "Mantén la seña firme para confirmar...",
+    "9e645b74e01f": "Cola de práctica",
+    "2862c9e1b2e4": "SignEdu – Plataforma multilingüe de aprendizaje de lengua de signos",
+    "cd61a944cf48": "SignEdu es una plataforma interactiva multilingüe de aprendizaje de lengua de signos que utiliza IA para retroalimentación de gestos en tiempo real y colaboración entre idiomas. Rompe barreras en la educación global: ¡empieza a signar hoy!"
+  }
+}

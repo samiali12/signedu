@@ -53,7 +53,7 @@ const Profile = () => {
   );
 
   return (
-    <div className="max-w-3xl mx-auto flex flex-col gap-8">
+    <div className="max-w-3xl mx-auto flex flex-col gap-8 mt-12 py-10">
       {/* Profile header */}
       <div className="bg-linear-to-br from-indigo-900 to-indigo-950 border border-indigo-700 rounded-2xl p-8 flex items-center gap-6">
         <div className="bg-indigo-700 w-20 h-20 rounded-full flex items-center justify-center text-3xl font-extrabold text-white shrink-0">
@@ -89,7 +89,9 @@ const Profile = () => {
               </button>
             </div>
           )}
-          <p className="text-indigo-300 text-sm font-medium">{levelLabel}</p>
+          <p className="text-indigo-300 text-sm font-medium">
+            <T text={levelLabel} />
+          </p>
 
           {/* XP bar */}
           <div className="mt-3">
@@ -142,7 +144,7 @@ const Profile = () => {
       {/* Lesson progress */}
       <div className="bg-gray-900 border border-gray-800 rounded-2xl p-6">
         <h2 className="text-white font-bold text-lg mb-4">
-          <T text="Lesson Progress" />
+          <T text={"Lesson Progress"} />
         </h2>
         <div className="flex flex-col gap-3">
           {LESSONS.map((lesson) => {

@@ -56,7 +56,7 @@ const Leaderboard = () => {
     : 0;
 
   return (
-    <div className="max-w-3xl mx-auto flex flex-col gap-8 mt-12">
+    <div className="max-w-3xl mx-auto flex flex-col gap-8 mt-12 py-10">
       <div className="text-center">
         <div className="inline-flex bg-yellow-500/10 border border-yellow-500/30 p-4 rounded-2xl mb-4">
           <Trophy size={40} className="text-yellow-400" />

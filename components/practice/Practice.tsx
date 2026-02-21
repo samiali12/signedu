@@ -1,23 +1,11 @@
 "use client";
 
-import { countFingersUp } from "@/data/practice";
 import { Camera, CheckCircle, Hand, RefreshCw } from "lucide-react";
 import { useCallback, useEffect, useRef, useState } from "react";
 import T from "../shared/T";
+import { practice_sign } from "@/data/practice";
 
-export interface PracticeSign {
-  id: string;
-  word: string;
-  instruction: string;
-  emoji: string;
-  detect: (landmarks: number[][]) => boolean;
-}
-
-export interface PracticeProps {
-  practice_sign: Omit<PracticeSign, "detect">[]; // functions removed for server
-}
-
-const Practice = ({ practice_sign }: PracticeProps) => {
+const Practice = () => {
   const videoRef = useRef<HTMLVideoElement>(null);
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const [currentSignIndex, setCurrentSignIndex] = useState(0);
@@ -30,29 +18,7 @@ const Practice = ({ practice_sign }: PracticeProps) => {
   const holdStart = useRef<number | null>(null);
   const HOLD_DURATION = 1500;
 
-  const signsWithDetect: PracticeSign[] = practice_sign.map((sign) => ({
-    ...sign,
-    detect: (landmarks: number[][]) => {
-      switch (sign.id) {
-        case "hello":
-          return countFingersUp(landmarks) >= 4;
-        case "one":
-          return countFingersUp(landmarks) === 1;
-        case "peace":
-          return countFingersUp(landmarks) === 2;
-        case "three":
-          return countFingersUp(landmarks) === 3;
-        case "five":
-          return countFingersUp(landmarks) === 5;
-        case "fist":
-          return countFingersUp(landmarks) === 0;
-        default:
-          return false;
-      }
-    },
-  }));
-
-  const currentSign = signsWithDetect[currentSignIndex];
+  const currentSign = practice_sign[currentSignIndex];
 
   useEffect(() => {
     let camera: { start: () => void; stop: () => void } | null = null;
@@ -117,7 +83,7 @@ const Practice = ({ practice_sign }: PracticeProps) => {
 
             const lmArray = landmarks.map((lm) => [lm.x, lm.y, lm.z]);
 
-            const matched = signsWithDetect[currentSignIndex].detect(lmArray);
+            const matched = practice_sign[currentSignIndex].detect(lmArray);
 
             if (matched && !signDetected) {
               if (!holdStart.current) holdStart.current = Date.now();
@@ -169,19 +135,19 @@ const Practice = ({ practice_sign }: PracticeProps) => {
     return () => {
       camera?.stop();
     };
-  }, [currentSignIndex, signsWithDetect, signDetected]);
+  }, [currentSignIndex, signDetected]);
 
   const handleNext = useCallback(() => {
     setSignDetected(false);
     setHoldProgress(0);
     holdStart.current = null;
-    if (currentSignIndex + 1 < signsWithDetect.length) {
+    if (currentSignIndex + 1 < practice_sign.length) {
       setCurrentSignIndex((i) => i + 1);
     } else {
       setCurrentSignIndex(0);
       setScore(0);
     }
-  }, [currentSignIndex, signsWithDetect.length]);
+  }, [currentSignIndex]);
 
   return (
     <div className="flex flex-col gap-8 p-6 md:p-10 mt-12">
@@ -275,10 +241,10 @@ const Practice = ({ practice_sign }: PracticeProps) => {
             <div className="text-7xl">{currentSign.emoji}</div>
             <div>
               <h2 className="text-2xl font-extrabold text-white mb-1">
-                {currentSign.word}
+                <T text={currentSign.word} />
               </h2>
               <p className="text-gray-400 text-sm leading-relaxed">
-                {currentSign.instruction}
+                <T text={currentSign.instruction} />
               </p>
             </div>
             {!signDetected && holdProgress > 0 && (
@@ -302,7 +268,7 @@ const Practice = ({ practice_sign }: PracticeProps) => {
                 >
                   <p>
                     text=
-                    {currentSignIndex + 1 < signsWithDetect.length
+                    {currentSignIndex + 1 < practice_sign.length
                       ? "Next Sign"
                       : "Restart"}
                   </p>
@@ -323,7 +289,7 @@ const Practice = ({ practice_sign }: PracticeProps) => {
             Practice Queue
           </p>
           <div className="flex flex-col gap-2">
-            {signsWithDetect.map(async (sign, i) => (
+            {practice_sign.map((sign, i) => (
               <div
                 key={sign.id}
                 className={`flex items-center gap-3 px-3 py-2 rounded-xl text-sm transition
@@ -331,7 +297,7 @@ const Practice = ({ practice_sign }: PracticeProps) => {
               >
                 <span className="text-xl">{sign.emoji}</span>
                 <span className={i < currentSignIndex ? "line-through" : ""}>
-                  {sign.word}
+                  <T text={sign.word} />
                 </span>
                 {i < currentSignIndex && (
                   <CheckCircle size={14} className="text-green-500 ml-auto" />

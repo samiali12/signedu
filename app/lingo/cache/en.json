@@ -20,6 +20,18 @@
     "9ab9060ebe43": "🤟",
     "e623e9856280": "Which sign is being shown?",
     "0ba2e78b19a5": "Correct! Great job!",
-    "b114ee3171ab": "Next"
+    "b114ee3171ab": "Next",
+    "b141b499d167": "Sign Practice",
+    "88c93b026052": "signs done",
+    "8a9fd9bd5ae2": "Camera access denied",
+    "9dac6bc18873": "Please allow camera access to use this feature.",
+    "dda5373c4a90": "Starting camera...",
+    "21882c0ef7b8": "Hand Detected",
+    "f18e172a4b74": "No Hand",
+    "16505c08efec": "{expression0}%",
+    "966c48c844d0": "Sign Recognized! 🎉",
+    "2eff093b4b8d": "text= {expression0}",
+    "257ff1a66a7f": "Hold the sign steady to confirm...",
+    "9e645b74e01f": "Practice Queue"
   }
 }

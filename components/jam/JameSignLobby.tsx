@@ -19,7 +19,7 @@ const JamSignLobby = ({
   );
 
   return (
-    <div className="flex flex-col items-center gap-10 py-16 max-w-md mx-auto text-center">
+    <div className="flex flex-col items-center gap-10 py-16 mt-12 max-w-md mx-auto text-center">
       <div>
         <div className="bg-indigo-600 p-4 rounded-2xl inline-flex mb-4">
           <Users size={40} className="text-white" />
