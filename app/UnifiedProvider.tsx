@@ -5,7 +5,7 @@ import { LingoProvider } from "@lingo.dev/compiler/react";
 
 const UnifiedProvider = ({ children }: { children: React.ReactNode }) => {
   return (
-    <LingoProvider>
+    <LingoProvider initialLocale="en">
       <LanguageContextProvider>{children}</LanguageContextProvider>
     </LingoProvider>
   );

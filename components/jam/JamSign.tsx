@@ -243,9 +243,7 @@ const JamSign = () => {
       <div className="flex items-center justify-between bg-gray-900 border border-gray-800 rounded-2xl px-5 py-3">
         <div className="flex items-center gap-3">
           <div className="w-3 h-3 bg-green-400 rounded-full animate-pulse" />
-          <span className="text-white font-semibold">
-            <T text="Room" />
-          </span>
+          <span className="text-white font-semibold">Room</span>
           <code className="bg-indigo-950 border border-indigo-800 text-indigo-300 px-3 py-1 rounded-lg font-mono font-bold tracking-widest text-sm">
             {roomId}
           </code>
@@ -294,19 +292,17 @@ const JamSign = () => {
             {!cameraReady && !cameraError && (
               <div className="flex flex-col items-center gap-3 absolute inset-0 justify-center">
                 <div className="w-8 h-8 border-2 border-indigo-500 border-t-transparent rounded-full animate-spin" />
-                <p className="text-gray-400 text-sm">
-                  <T text="Starting camera..." />
-                </p>
+                <p className="text-gray-400 text-sm">Starting camera...</p>
               </div>
             )}
 
             {cameraError && (
               <div className="absolute inset-0 flex flex-col items-center justify-center gap-2 p-6 text-center">
                 <p className="text-red-400 font-semibold">
-                  <T text="Camera access denied" />
+                  Camera access denied
                 </p>
                 <p className="text-gray-500 text-sm">
-                  <T text="Enable camera to sign in the jam." />
+                  Enable camera to sign in the jam.
                 </p>
               </div>
             )}
@@ -383,7 +379,7 @@ const JamSign = () => {
 
           {/* Instructions */}
           <div className="bg-gray-900 border border-gray-800 rounded-xl px-4 py-3 text-sm text-gray-400 text-center">
-            <T text="Hold any sign steady for 1.5 seconds to send it to the room." />
+            <p>Hold any sign steady for 1.5 seconds to send it to the room.</p>
           </div>
         </div>
 
@@ -391,9 +387,7 @@ const JamSign = () => {
         <div className="flex flex-col bg-gray-900 border border-gray-800 rounded-2xl overflow-hidden">
           <div className="px-4 py-3 border-b border-gray-800 flex items-center gap-2">
             <Hand size={16} className="text-indigo-400" />
-            <span className="text-white font-semibold text-sm">
-              <T text="Sign Feed" />
-            </span>
+            <span className="text-white font-semibold text-sm">Sign Feed</span>
             <span className="bg-gray-800 text-gray-400 text-xs px-2 py-0.5 rounded-full ml-auto">
               {messages.length} <T text="signs" />
             </span>
@@ -407,11 +401,9 @@ const JamSign = () => {
             {messages.length === 0 ? (
               <div className="flex-1 flex flex-col items-center justify-center text-center gap-3 text-gray-600">
                 <span className="text-4xl">🤟</span>
-                <p className="text-sm">
-                  <T text="No signs yet. Be the first to sign!" />
-                </p>
+                <p className="text-sm">No signs yet. Be the first to sign!</p>
                 <p className="text-xs">
-                  <T text="Share the room code with a friend to practice together." />
+                  Share the room code with a friend to practice together.
                 </p>
               </div>
             ) : (

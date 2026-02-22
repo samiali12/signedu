@@ -10,7 +10,7 @@ export const nextConfig: NextConfig = {
 export default withLingo(nextConfig, {
   sourceRoot: './app',
   sourceLocale: 'en',
-  targetLocales: ['pa-PK', 'en', 'ja', 'es', 'fr', 'de', 'ar', 'zh', 'pt', 'ko', 'hi', 'it'],
+  targetLocales: ['en', 'es', 'zh', 'ar'],
   models: 'lingo.dev',
   dev: {
     usePseudotranslator: false

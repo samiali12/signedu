@@ -1,16 +1,34 @@
+import { BookOpen, Trophy, Users } from "lucide-react";
+
+export const HERO_SECTION_STATS = [
+  { label: "Lessons", value: "24+", icon: BookOpen },
+  { label: "Languages", value: "4", icon: Users },
+  { label: "Signs Learned", value: "1.2k", icon: Trophy },
+];
+
+export const HERO_SECTION_FEATURES = [
+  {
+    title: "Interactive Lessons",
+    desc: "Step-by-step ASL lessons explained in your native language with video demonstrations.",
+    color: "from-indigo-600 to-indigo-800",
+  },
+  {
+    title: "AI Sign Feedback",
+    desc: "Use your webcam to practice signs and get real-time accuracy feedback powered by AI.",
+    color: "from-violet-600 to-violet-800",
+  },
+  {
+    title: "Sign Jam Rooms",
+    desc: "Practice with learners worldwide. Signs are auto-translated for every participant.",
+    color: "from-fuchsia-600 to-fuchsia-800",
+  },
+];
+
 export const LANGUAGES = [
-  { code: "en" as const, label: "English", flag: "🇺🇸", region: "Global" },
-  { code: "pa-PK" as const, label: "Pakistani", flag: "pk", region: "Pakistan" },
-  { code: "ja" as const, label: "日本語", flag: "🇯🇵", region: "Japan" },
-  { code: "es" as const, label: "Español", flag: "🇪🇸", region: "Spain" },
-  { code: "fr" as const, label: "Français", flag: "🇫🇷", region: "France" },
-  { code: "de" as const, label: "Deutsch", flag: "🇩🇪", region: "Germany" },
-  { code: "ar" as const, label: "العربية", flag: "🇸🇦", region: "Arabic" },
-  { code: "zh" as const, label: "中文", flag: "🇨🇳", region: "China" },
-  { code: "pt" as const, label: "Português", flag: "🇧🇷", region: "Brazil" },
-  { code: "ko" as const, label: "한국어", flag: "🇰🇷", region: "Korea" },
-  { code: "hi" as const, label: "हिन्दी", flag: "🇮🇳", region: "India" },
-  { code: "it" as const, label: "Italiano", flag: "🇮🇹", region: "Italy" },
+  { code: "en" as const, label: "English", flag: "🇺🇸", region: "Global", },
+  { code: "es" as const, label: "Español", flag: "🇪🇸", region: "Latin America & Spain", },
+  { code: "zh" as const, label: "中文", flag: "🇨🇳", region: "China", },
+  { code: "ar" as const, label: "العربية", flag: "🇸🇦", region: "Middle East", },
 ];
 
 export const FEATURES = [

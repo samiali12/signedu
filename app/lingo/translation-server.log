@@ -619,3 +619,727 @@
 2026-02-22T01:45:27.768Z [DEBUG] [Lingo.dev] 🔄 Hashes: 2862c9e1b2e4, cd61a944cf48
 2026-02-22T01:45:27.812Z [DEBUG] [Lingo.dev] [BUSY] Server is now busy (1 active)
 2026-02-22T01:45:27.990Z [DEBUG] [Lingo.dev] [IDLE] Server is now idle
+2026-02-22T06:42:30.313Z [INFO] [Lingo.dev] Port 60000 is available, starting new server...
+2026-02-22T06:42:35.887Z [INFO] [Lingo.dev] 🔧 Initializing translator...
+2026-02-22T06:42:35.893Z [DEBUG] [Lingo.dev] Starting translation server on port 60000
+2026-02-22T06:42:35.895Z [INFO] [Lingo.dev] Translation server listening on http://127.0.0.1:60000
+2026-02-22T06:42:35.896Z [INFO] [Lingo.dev] WebSocket server initialized
+2026-02-22T06:43:24.587Z [INFO] [Lingo.dev] 📥 Received: POST /translations/es
+2026-02-22T06:43:24.724Z [INFO] [Lingo.dev] 🔄 Processing: POST /translations/es
+2026-02-22T06:43:24.829Z [DEBUG] [Lingo.dev] POST /translations/es
+2026-02-22T06:43:24.871Z [DEBUG] [Lingo.dev] Reading request body...
+2026-02-22T06:43:24.923Z [DEBUG] [Lingo.dev] Chunk read, body: {"hashes":["2862c9e1b2e4","cd61a944cf48"]}
+2026-02-22T06:43:24.955Z [DEBUG] [Lingo.dev] Parsed hashes: 2862c9e1b2e4,cd61a944cf48
+2026-02-22T06:43:24.996Z [DEBUG] [Lingo.dev] Reloaded metadata: 25 entries
+2026-02-22T06:43:25.028Z [INFO] [Lingo.dev] 🔄 Translating 2 hashes to es
+2026-02-22T06:43:25.069Z [DEBUG] [Lingo.dev] 🔄 Hashes: 2862c9e1b2e4, cd61a944cf48
+2026-02-22T06:43:25.128Z [DEBUG] [Lingo.dev] [BUSY] Server is now busy (1 active)
+2026-02-22T06:43:25.245Z [DEBUG] [Lingo.dev] [IDLE] Server is now idle
+2026-02-22T06:43:29.787Z [INFO] [Lingo.dev] 📥 Received: OPTIONS /translations/es
+2026-02-22T06:43:29.791Z [INFO] [Lingo.dev] 🔄 Processing: OPTIONS /translations/es
+2026-02-22T06:43:29.808Z [DEBUG] [Lingo.dev] OPTIONS /translations/es
+2026-02-22T06:43:29.814Z [INFO] [Lingo.dev] 📥 Received: POST /translations/es
+2026-02-22T06:43:29.825Z [INFO] [Lingo.dev] 🔄 Processing: POST /translations/es
+2026-02-22T06:43:29.836Z [DEBUG] [Lingo.dev] POST /translations/es
+2026-02-22T06:43:29.851Z [DEBUG] [Lingo.dev] Reading request body...
+2026-02-22T06:43:29.856Z [DEBUG] [Lingo.dev] Chunk read, body: {"hashes":["0b054301b57d","9426f7803679","4f6d7dfeff4e","2e29f9a3bbfe","b67939fb9e06","d00c90e747ee","fbc598264bc1","01335d4f1b0b","43d4e952a176"]}
+2026-02-22T06:43:29.869Z [DEBUG] [Lingo.dev] Parsed hashes: 0b054301b57d,9426f7803679,4f6d7dfeff4e,2e29f9a3bbfe,b67939fb9e06,d00c90e747ee,fbc598264bc1,01335d4f1b0b,43d4e952a176
+2026-02-22T06:43:29.878Z [DEBUG] [Lingo.dev] Reloaded metadata: 25 entries
+2026-02-22T06:43:29.894Z [INFO] [Lingo.dev] 🔄 Translating 9 hashes to es
+2026-02-22T06:43:29.922Z [DEBUG] [Lingo.dev] 🔄 Hashes: 0b054301b57d, 9426f7803679, 4f6d7dfeff4e, 2e29f9a3bbfe, b67939fb9e06, d00c90e747ee, fbc598264bc1, 01335d4f1b0b, 43d4e952a176
+2026-02-22T06:43:29.931Z [DEBUG] [Lingo.dev] [BUSY] Server is now busy (1 active)
+2026-02-22T06:43:30.314Z [DEBUG] [Lingo.dev] [IDLE] Server is now idle
+2026-02-22T06:43:50.789Z [DEBUG] [Lingo.dev] WebSocket client connected. Total clients: 1
+2026-02-22T06:45:32.151Z [INFO] [Lingo.dev] Port 60000 is available, starting new server...
+2026-02-22T06:45:32.981Z [INFO] [Lingo.dev] 🔧 Initializing translator...
+2026-02-22T06:45:33.083Z [DEBUG] [Lingo.dev] Starting translation server on port 60000
+2026-02-22T06:45:33.088Z [INFO] [Lingo.dev] Translation server listening on http://127.0.0.1:60000
+2026-02-22T06:45:33.089Z [INFO] [Lingo.dev] WebSocket server initialized
+2026-02-22T06:45:33.094Z [DEBUG] [Lingo.dev] WebSocket client connected. Total clients: 1
+2026-02-22T06:45:39.427Z [INFO] [Lingo.dev] 📥 Received: POST /translations/es
+2026-02-22T06:45:39.565Z [INFO] [Lingo.dev] 🔄 Processing: POST /translations/es
+2026-02-22T06:45:39.691Z [DEBUG] [Lingo.dev] POST /translations/es
+2026-02-22T06:45:39.729Z [DEBUG] [Lingo.dev] Reading request body...
+2026-02-22T06:45:39.784Z [DEBUG] [Lingo.dev] Chunk read, body: {"hashes":["2862c9e1b2e4","cd61a944cf48"]}
+2026-02-22T06:45:39.841Z [DEBUG] [Lingo.dev] Parsed hashes: 2862c9e1b2e4,cd61a944cf48
+2026-02-22T06:45:39.865Z [DEBUG] [Lingo.dev] Reloaded metadata: 25 entries
+2026-02-22T06:45:39.916Z [INFO] [Lingo.dev] 🔄 Translating 2 hashes to es
+2026-02-22T06:45:39.973Z [DEBUG] [Lingo.dev] 🔄 Hashes: 2862c9e1b2e4, cd61a944cf48
+2026-02-22T06:45:40.009Z [DEBUG] [Lingo.dev] [BUSY] Server is now busy (1 active)
+2026-02-22T06:45:40.047Z [DEBUG] [Lingo.dev] WebSocket client disconnected. Total clients: 0
+2026-02-22T06:45:40.126Z [DEBUG] [Lingo.dev] [IDLE] Server is now idle
+2026-02-22T06:45:41.782Z [INFO] [Lingo.dev] 📥 Received: OPTIONS /translations/es
+2026-02-22T06:45:41.796Z [INFO] [Lingo.dev] 🔄 Processing: OPTIONS /translations/es
+2026-02-22T06:45:41.800Z [DEBUG] [Lingo.dev] OPTIONS /translations/es
+2026-02-22T06:45:41.804Z [INFO] [Lingo.dev] 📥 Received: POST /translations/es
+2026-02-22T06:45:41.807Z [INFO] [Lingo.dev] 🔄 Processing: POST /translations/es
+2026-02-22T06:45:41.810Z [DEBUG] [Lingo.dev] POST /translations/es
+2026-02-22T06:45:41.814Z [DEBUG] [Lingo.dev] Reading request body...
+2026-02-22T06:45:41.831Z [DEBUG] [Lingo.dev] Chunk read, body: {"hashes":["0b054301b57d","9426f7803679","4f6d7dfeff4e","2e29f9a3bbfe","b67939fb9e06","d00c90e747ee","fbc598264bc1","01335d4f1b0b","43d4e952a176"]}
+2026-02-22T06:45:41.845Z [DEBUG] [Lingo.dev] Parsed hashes: 0b054301b57d,9426f7803679,4f6d7dfeff4e,2e29f9a3bbfe,b67939fb9e06,d00c90e747ee,fbc598264bc1,01335d4f1b0b,43d4e952a176
+2026-02-22T06:45:41.868Z [DEBUG] [Lingo.dev] Reloaded metadata: 25 entries
+2026-02-22T06:45:41.877Z [INFO] [Lingo.dev] 🔄 Translating 9 hashes to es
+2026-02-22T06:45:41.909Z [DEBUG] [Lingo.dev] 🔄 Hashes: 0b054301b57d, 9426f7803679, 4f6d7dfeff4e, 2e29f9a3bbfe, b67939fb9e06, d00c90e747ee, fbc598264bc1, 01335d4f1b0b, 43d4e952a176
+2026-02-22T06:45:41.932Z [DEBUG] [Lingo.dev] [BUSY] Server is now busy (1 active)
+2026-02-22T06:45:42.301Z [DEBUG] [Lingo.dev] [IDLE] Server is now idle
+2026-02-22T06:46:12.808Z [DEBUG] [Lingo.dev] WebSocket client connected. Total clients: 1
+2026-02-22T06:54:37.960Z [INFO] [Lingo.dev] Port 60000 is available, starting new server...
+2026-02-22T06:54:38.483Z [INFO] [Lingo.dev] 🔧 Initializing translator...
+2026-02-22T06:54:38.514Z [DEBUG] [Lingo.dev] Starting translation server on port 60000
+2026-02-22T06:54:38.516Z [INFO] [Lingo.dev] Translation server listening on http://127.0.0.1:60000
+2026-02-22T06:54:38.517Z [INFO] [Lingo.dev] WebSocket server initialized
+2026-02-22T06:54:51.554Z [INFO] [Lingo.dev] 📥 Received: POST /translations/es
+2026-02-22T06:54:51.666Z [INFO] [Lingo.dev] 🔄 Processing: POST /translations/es
+2026-02-22T06:54:51.766Z [DEBUG] [Lingo.dev] POST /translations/es
+2026-02-22T06:54:51.803Z [DEBUG] [Lingo.dev] Reading request body...
+2026-02-22T06:54:51.852Z [DEBUG] [Lingo.dev] Chunk read, body: {"hashes":["2862c9e1b2e4","cd61a944cf48"]}
+2026-02-22T06:54:51.907Z [DEBUG] [Lingo.dev] Parsed hashes: 2862c9e1b2e4,cd61a944cf48
+2026-02-22T06:54:51.935Z [DEBUG] [Lingo.dev] Reloaded metadata: 4 entries
+2026-02-22T06:54:51.970Z [INFO] [Lingo.dev] 🔄 Translating 2 hashes to es
+2026-02-22T06:54:51.986Z [DEBUG] [Lingo.dev] 🔄 Hashes: 2862c9e1b2e4, cd61a944cf48
+2026-02-22T06:54:52.029Z [DEBUG] [Lingo.dev] [BUSY] Server is now busy (1 active)
+2026-02-22T06:54:52.185Z [DEBUG] [Lingo.dev] [IDLE] Server is now idle
+2026-02-22T06:54:53.850Z [INFO] [Lingo.dev] 📥 Received: OPTIONS /translations/es
+2026-02-22T06:54:53.864Z [INFO] [Lingo.dev] 🔄 Processing: OPTIONS /translations/es
+2026-02-22T06:54:53.868Z [DEBUG] [Lingo.dev] OPTIONS /translations/es
+2026-02-22T06:54:53.887Z [INFO] [Lingo.dev] 📥 Received: POST /translations/es
+2026-02-22T06:54:53.893Z [INFO] [Lingo.dev] 🔄 Processing: POST /translations/es
+2026-02-22T06:54:53.904Z [DEBUG] [Lingo.dev] POST /translations/es
+2026-02-22T06:54:53.915Z [DEBUG] [Lingo.dev] Reading request body...
+2026-02-22T06:54:53.930Z [DEBUG] [Lingo.dev] Chunk read, body: {"hashes":["0b054301b57d","9426f7803679","609196abc8a3","8c8b0ce19222","1c1b1599025c","767db59dd383","4f6d7dfeff4e","2e29f9a3bbfe","b67939fb9e06","d00c90e747ee","fbc598264bc1","01335d4f1b0b","43d4e952a176"]}
+2026-02-22T06:54:53.941Z [DEBUG] [Lingo.dev] Parsed hashes: 0b054301b57d,9426f7803679,609196abc8a3,8c8b0ce19222,1c1b1599025c,767db59dd383,4f6d7dfeff4e,2e29f9a3bbfe,b67939fb9e06,d00c90e747ee,fbc598264bc1,01335d4f1b0b,43d4e952a176
+2026-02-22T06:54:53.952Z [DEBUG] [Lingo.dev] Reloaded metadata: 4 entries
+2026-02-22T06:54:53.972Z [INFO] [Lingo.dev] 🔄 Translating 13 hashes to es
+2026-02-22T06:54:53.990Z [DEBUG] [Lingo.dev] 🔄 Hashes: 0b054301b57d, 9426f7803679, 609196abc8a3, 8c8b0ce19222, 1c1b1599025c, 767db59dd383, 4f6d7dfeff4e, 2e29f9a3bbfe, b67939fb9e06, d00c90e747ee, fbc598264bc1, 01335d4f1b0b, 43d4e952a176
+2026-02-22T06:54:54.002Z [DEBUG] [Lingo.dev] [BUSY] Server is now busy (1 active)
+2026-02-22T06:54:56.710Z [DEBUG] [Lingo.dev] [IDLE] Server is now idle
+2026-02-22T06:55:11.783Z [DEBUG] [Lingo.dev] WebSocket client connected. Total clients: 1
+2026-02-22T06:56:32.791Z [INFO] [Lingo.dev] 📥 Received: OPTIONS /translations/es
+2026-02-22T06:56:32.810Z [INFO] [Lingo.dev] 🔄 Processing: OPTIONS /translations/es
+2026-02-22T06:56:32.837Z [DEBUG] [Lingo.dev] OPTIONS /translations/es
+2026-02-22T06:56:32.858Z [INFO] [Lingo.dev] 📥 Received: POST /translations/es
+2026-02-22T06:56:32.887Z [INFO] [Lingo.dev] 🔄 Processing: POST /translations/es
+2026-02-22T06:56:32.911Z [DEBUG] [Lingo.dev] POST /translations/es
+2026-02-22T06:56:32.925Z [DEBUG] [Lingo.dev] Reading request body...
+2026-02-22T06:56:32.960Z [DEBUG] [Lingo.dev] Chunk read, body: {"hashes":["d4230a331ea8"]}
+2026-02-22T06:56:33.426Z [DEBUG] [Lingo.dev] Parsed hashes: d4230a331ea8
+2026-02-22T06:56:34.377Z [DEBUG] [Lingo.dev] Reloaded metadata: 5 entries
+2026-02-22T06:56:34.588Z [INFO] [Lingo.dev] 🔄 Translating 1 hashes to es
+2026-02-22T06:56:34.611Z [DEBUG] [Lingo.dev] 🔄 Hashes: d4230a331ea8
+2026-02-22T06:56:34.644Z [DEBUG] [Lingo.dev] [BUSY] Server is now busy (1 active)
+2026-02-22T06:56:35.090Z [DEBUG] [Lingo.dev] [IDLE] Server is now idle
+2026-02-22T06:58:23.830Z [INFO] [Lingo.dev] 📥 Received: OPTIONS /translations/es
+2026-02-22T06:58:23.895Z [INFO] [Lingo.dev] 🔄 Processing: OPTIONS /translations/es
+2026-02-22T06:58:23.914Z [DEBUG] [Lingo.dev] OPTIONS /translations/es
+2026-02-22T06:58:24.015Z [INFO] [Lingo.dev] 📥 Received: POST /translations/es
+2026-02-22T06:58:24.350Z [INFO] [Lingo.dev] 🔄 Processing: POST /translations/es
+2026-02-22T06:58:24.583Z [DEBUG] [Lingo.dev] POST /translations/es
+2026-02-22T06:58:24.663Z [DEBUG] [Lingo.dev] Reading request body...
+2026-02-22T06:58:24.938Z [DEBUG] [Lingo.dev] Chunk read, body: {"hashes":["a4769653ffc9","8071110c1824","6eeec36ebe05","a282a4424ca4","918522f2abf7","b0a3a60720be","db08c8c9b869","85a1de6552f9"]}
+2026-02-22T06:58:24.988Z [DEBUG] [Lingo.dev] Parsed hashes: a4769653ffc9,8071110c1824,6eeec36ebe05,a282a4424ca4,918522f2abf7,b0a3a60720be,db08c8c9b869,85a1de6552f9
+2026-02-22T06:58:25.481Z [DEBUG] [Lingo.dev] Reloaded metadata: 20 entries
+2026-02-22T06:58:25.687Z [INFO] [Lingo.dev] 🔄 Translating 8 hashes to es
+2026-02-22T06:58:25.736Z [DEBUG] [Lingo.dev] 🔄 Hashes: a4769653ffc9, 8071110c1824, 6eeec36ebe05, a282a4424ca4, 918522f2abf7, b0a3a60720be, db08c8c9b869, 85a1de6552f9
+2026-02-22T06:58:25.752Z [DEBUG] [Lingo.dev] [BUSY] Server is now busy (1 active)
+2026-02-22T06:58:26.074Z [DEBUG] [Lingo.dev] [IDLE] Server is now idle
+2026-02-22T06:59:36.643Z [INFO] [Lingo.dev] 📥 Received: POST /translations/es
+2026-02-22T06:59:36.717Z [INFO] [Lingo.dev] 🔄 Processing: POST /translations/es
+2026-02-22T06:59:36.783Z [DEBUG] [Lingo.dev] POST /translations/es
+2026-02-22T06:59:36.840Z [DEBUG] [Lingo.dev] Reading request body...
+2026-02-22T06:59:36.937Z [DEBUG] [Lingo.dev] Chunk read, body: {"hashes":["2862c9e1b2e4","cd61a944cf48"]}
+2026-02-22T06:59:37.004Z [DEBUG] [Lingo.dev] Parsed hashes: 2862c9e1b2e4,cd61a944cf48
+2026-02-22T06:59:37.061Z [DEBUG] [Lingo.dev] Reloaded metadata: 23 entries
+2026-02-22T06:59:37.103Z [INFO] [Lingo.dev] 🔄 Translating 2 hashes to es
+2026-02-22T06:59:37.185Z [DEBUG] [Lingo.dev] 🔄 Hashes: 2862c9e1b2e4, cd61a944cf48
+2026-02-22T06:59:37.361Z [DEBUG] [Lingo.dev] [BUSY] Server is now busy (1 active)
+2026-02-22T06:59:37.465Z [INFO] [Lingo.dev] 📥 Received: POST /translations/es
+2026-02-22T06:59:37.604Z [INFO] [Lingo.dev] 🔄 Processing: POST /translations/es
+2026-02-22T06:59:37.676Z [DEBUG] [Lingo.dev] POST /translations/es
+2026-02-22T06:59:37.899Z [DEBUG] [Lingo.dev] Reading request body...
+2026-02-22T06:59:37.957Z [DEBUG] [Lingo.dev] Chunk read, body: {"hashes":["2862c9e1b2e4","cd61a944cf48"]}
+2026-02-22T06:59:37.982Z [DEBUG] [Lingo.dev] Parsed hashes: 2862c9e1b2e4,cd61a944cf48
+2026-02-22T06:59:38.078Z [DEBUG] [Lingo.dev] Reloaded metadata: 23 entries
+2026-02-22T06:59:38.285Z [INFO] [Lingo.dev] 🔄 Translating 2 hashes to es
+2026-02-22T06:59:38.303Z [DEBUG] [Lingo.dev] 🔄 Hashes: 2862c9e1b2e4, cd61a944cf48
+2026-02-22T06:59:38.319Z [DEBUG] [Lingo.dev] [IDLE] Server is now idle
+2026-02-22T06:59:38.341Z [INFO] [Lingo.dev] 📥 Received: OPTIONS /translations/es
+2026-02-22T06:59:38.363Z [INFO] [Lingo.dev] 🔄 Processing: OPTIONS /translations/es
+2026-02-22T06:59:38.395Z [DEBUG] [Lingo.dev] OPTIONS /translations/es
+2026-02-22T06:59:38.449Z [INFO] [Lingo.dev] 📥 Received: POST /translations/es
+2026-02-22T06:59:38.461Z [INFO] [Lingo.dev] 🔄 Processing: POST /translations/es
+2026-02-22T06:59:38.481Z [DEBUG] [Lingo.dev] POST /translations/es
+2026-02-22T06:59:38.503Z [DEBUG] [Lingo.dev] Reading request body...
+2026-02-22T06:59:38.548Z [DEBUG] [Lingo.dev] Chunk read, body: {"hashes":["dda5373c4a90","16505c08efec","0b62584e8d86"]}
+2026-02-22T06:59:38.593Z [DEBUG] [Lingo.dev] Parsed hashes: dda5373c4a90,16505c08efec,0b62584e8d86
+2026-02-22T06:59:38.608Z [DEBUG] [Lingo.dev] Reloaded metadata: 23 entries
+2026-02-22T06:59:38.659Z [INFO] [Lingo.dev] 🔄 Translating 3 hashes to es
+2026-02-22T06:59:38.715Z [DEBUG] [Lingo.dev] 🔄 Hashes: dda5373c4a90, 16505c08efec, 0b62584e8d86
+2026-02-22T06:59:38.741Z [DEBUG] [Lingo.dev] [BUSY] Server is now busy (1 active)
+2026-02-22T06:59:38.772Z [DEBUG] [Lingo.dev] [IDLE] Server is now idle
+2026-02-22T07:00:08.213Z [INFO] [Lingo.dev] 📥 Received: POST /translations/es
+2026-02-22T07:00:09.480Z [INFO] [Lingo.dev] 🔄 Processing: POST /translations/es
+2026-02-22T07:00:09.851Z [DEBUG] [Lingo.dev] POST /translations/es
+2026-02-22T07:00:09.957Z [DEBUG] [Lingo.dev] Reading request body...
+2026-02-22T07:00:10.104Z [DEBUG] [Lingo.dev] Chunk read, body: {"hashes":["2862c9e1b2e4","cd61a944cf48"]}
+2026-02-22T07:00:10.288Z [DEBUG] [Lingo.dev] Parsed hashes: 2862c9e1b2e4,cd61a944cf48
+2026-02-22T07:00:10.616Z [DEBUG] [Lingo.dev] Reloaded metadata: 23 entries
+2026-02-22T07:00:10.675Z [INFO] [Lingo.dev] 🔄 Translating 2 hashes to es
+2026-02-22T07:00:10.737Z [DEBUG] [Lingo.dev] 🔄 Hashes: 2862c9e1b2e4, cd61a944cf48
+2026-02-22T07:00:10.792Z [DEBUG] [Lingo.dev] [BUSY] Server is now busy (1 active)
+2026-02-22T07:00:10.811Z [DEBUG] [Lingo.dev] [IDLE] Server is now idle
+2026-02-22T07:01:57.078Z [INFO] [Lingo.dev] 📥 Received: POST /translations/es
+2026-02-22T07:01:58.407Z [INFO] [Lingo.dev] 🔄 Processing: POST /translations/es
+2026-02-22T07:01:59.411Z [DEBUG] [Lingo.dev] POST /translations/es
+2026-02-22T07:01:59.501Z [DEBUG] [Lingo.dev] Reading request body...
+2026-02-22T07:02:00.301Z [DEBUG] [Lingo.dev] Chunk read, body: {"hashes":["2862c9e1b2e4","cd61a944cf48"]}
+2026-02-22T07:02:01.693Z [DEBUG] [Lingo.dev] Parsed hashes: 2862c9e1b2e4,cd61a944cf48
+2026-02-22T07:02:02.285Z [DEBUG] [Lingo.dev] Reloaded metadata: 33 entries
+2026-02-22T07:02:02.533Z [INFO] [Lingo.dev] 🔄 Translating 2 hashes to es
+2026-02-22T07:02:02.580Z [DEBUG] [Lingo.dev] 🔄 Hashes: 2862c9e1b2e4, cd61a944cf48
+2026-02-22T07:02:02.612Z [DEBUG] [Lingo.dev] [BUSY] Server is now busy (1 active)
+2026-02-22T07:02:02.658Z [INFO] [Lingo.dev] 📥 Received: POST /translations/es
+2026-02-22T07:02:02.708Z [INFO] [Lingo.dev] 🔄 Processing: POST /translations/es
+2026-02-22T07:02:02.750Z [DEBUG] [Lingo.dev] POST /translations/es
+2026-02-22T07:02:02.809Z [DEBUG] [Lingo.dev] Reading request body...
+2026-02-22T07:02:02.847Z [DEBUG] [Lingo.dev] Chunk read, body: {"hashes":["2862c9e1b2e4","cd61a944cf48"]}
+2026-02-22T07:02:02.884Z [DEBUG] [Lingo.dev] Parsed hashes: 2862c9e1b2e4,cd61a944cf48
+2026-02-22T07:02:02.903Z [DEBUG] [Lingo.dev] Reloaded metadata: 33 entries
+2026-02-22T07:02:02.915Z [INFO] [Lingo.dev] 🔄 Translating 2 hashes to es
+2026-02-22T07:02:02.939Z [DEBUG] [Lingo.dev] 🔄 Hashes: 2862c9e1b2e4, cd61a944cf48
+2026-02-22T07:02:02.963Z [DEBUG] [Lingo.dev] [IDLE] Server is now idle
+2026-02-22T07:02:02.984Z [INFO] [Lingo.dev] 📥 Received: POST /translations/es
+2026-02-22T07:02:03.001Z [INFO] [Lingo.dev] 🔄 Processing: POST /translations/es
+2026-02-22T07:02:03.013Z [DEBUG] [Lingo.dev] POST /translations/es
+2026-02-22T07:02:03.027Z [DEBUG] [Lingo.dev] Reading request body...
+2026-02-22T07:02:03.053Z [DEBUG] [Lingo.dev] Chunk read, body: {"hashes":["2862c9e1b2e4","cd61a944cf48"]}
+2026-02-22T07:02:03.091Z [DEBUG] [Lingo.dev] Parsed hashes: 2862c9e1b2e4,cd61a944cf48
+2026-02-22T07:02:03.100Z [DEBUG] [Lingo.dev] Reloaded metadata: 33 entries
+2026-02-22T07:02:03.128Z [INFO] [Lingo.dev] 🔄 Translating 2 hashes to es
+2026-02-22T07:02:03.156Z [DEBUG] [Lingo.dev] 🔄 Hashes: 2862c9e1b2e4, cd61a944cf48
+2026-02-22T07:02:03.185Z [DEBUG] [Lingo.dev] [BUSY] Server is now busy (1 active)
+2026-02-22T07:02:03.216Z [DEBUG] [Lingo.dev] WebSocket client disconnected. Total clients: 0
+2026-02-22T07:02:03.246Z [DEBUG] [Lingo.dev] [IDLE] Server is now idle
+2026-02-22T07:02:10.760Z [INFO] [Lingo.dev] 📥 Received: OPTIONS /translations/es
+2026-02-22T07:02:11.032Z [INFO] [Lingo.dev] 🔄 Processing: OPTIONS /translations/es
+2026-02-22T07:02:11.128Z [DEBUG] [Lingo.dev] OPTIONS /translations/es
+2026-02-22T07:02:11.151Z [INFO] [Lingo.dev] 📥 Received: POST /translations/es
+2026-02-22T07:02:11.166Z [INFO] [Lingo.dev] 🔄 Processing: POST /translations/es
+2026-02-22T07:02:11.206Z [DEBUG] [Lingo.dev] POST /translations/es
+2026-02-22T07:02:11.283Z [DEBUG] [Lingo.dev] Reading request body...
+2026-02-22T07:02:11.329Z [DEBUG] [Lingo.dev] Chunk read, body: {"hashes":["0b054301b57d","9426f7803679","d4230a331ea8","b141b499d167","613b32e6c6b9","88c93b026052","8a9fd9bd5ae2","9dac6bc18873","6016986d2a14","9e645b74e01f","4f6d7dfeff4e","a4769653ffc9","8071110c1824","6eeec36ebe05","a282a4424ca4","b0a3a60720be","db08c8c9b869","85a1de6552f9"]}
+2026-02-22T07:02:11.367Z [DEBUG] [Lingo.dev] Parsed hashes: 0b054301b57d,9426f7803679,d4230a331ea8,b141b499d167,613b32e6c6b9,88c93b026052,8a9fd9bd5ae2,9dac6bc18873,6016986d2a14,9e645b74e01f,4f6d7dfeff4e,a4769653ffc9,8071110c1824,6eeec36ebe05,a282a4424ca4,b0a3a60720be,db08c8c9b869,85a1de6552f9
+2026-02-22T07:02:11.401Z [DEBUG] [Lingo.dev] Reloaded metadata: 33 entries
+2026-02-22T07:02:11.447Z [INFO] [Lingo.dev] 🔄 Translating 18 hashes to es
+2026-02-22T07:02:11.610Z [DEBUG] [Lingo.dev] 🔄 Hashes: 0b054301b57d, 9426f7803679, d4230a331ea8, b141b499d167, 613b32e6c6b9, 88c93b026052, 8a9fd9bd5ae2, 9dac6bc18873, 6016986d2a14, 9e645b74e01f, 4f6d7dfeff4e, a4769653ffc9, 8071110c1824, 6eeec36ebe05, a282a4424ca4, b0a3a60720be, db08c8c9b869, 85a1de6552f9
+2026-02-22T07:02:11.710Z [DEBUG] [Lingo.dev] [BUSY] Server is now busy (1 active)
+2026-02-22T07:02:12.899Z [INFO] [Lingo.dev] 📥 Received: POST /translations/es
+2026-02-22T07:02:14.183Z [INFO] [Lingo.dev] 🔄 Processing: POST /translations/es
+2026-02-22T07:02:14.837Z [DEBUG] [Lingo.dev] POST /translations/es
+2026-02-22T07:02:14.979Z [DEBUG] [Lingo.dev] Reading request body...
+2026-02-22T07:02:15.028Z [DEBUG] [Lingo.dev] Chunk read, body: {"hashes":["0b054301b57d","9426f7803679","d4230a331ea8","b141b499d167","613b32e6c6b9","88c93b026052","8a9fd9bd5ae2","9dac6bc18873","6016986d2a14","9e645b74e01f","4f6d7dfeff4e","a4769653ffc9","8071110c1824","6eeec36ebe05","a282a4424ca4","b0a3a60720be","db08c8c9b869","85a1de6552f9","dda5373c4a90","16505c08efec","0b62584e8d86"]}
+2026-02-22T07:02:15.324Z [DEBUG] [Lingo.dev] Parsed hashes: 0b054301b57d,9426f7803679,d4230a331ea8,b141b499d167,613b32e6c6b9,88c93b026052,8a9fd9bd5ae2,9dac6bc18873,6016986d2a14,9e645b74e01f,4f6d7dfeff4e,a4769653ffc9,8071110c1824,6eeec36ebe05,a282a4424ca4,b0a3a60720be,db08c8c9b869,85a1de6552f9,dda5373c4a90,16505c08efec,0b62584e8d86
+2026-02-22T07:02:15.541Z [DEBUG] [Lingo.dev] Reloaded metadata: 33 entries
+2026-02-22T07:02:15.594Z [INFO] [Lingo.dev] 🔄 Translating 21 hashes to es
+2026-02-22T07:02:15.950Z [DEBUG] [Lingo.dev] 🔄 Hashes: 0b054301b57d, 9426f7803679, d4230a331ea8, b141b499d167, 613b32e6c6b9, 88c93b026052, 8a9fd9bd5ae2, 9dac6bc18873, 6016986d2a14, 9e645b74e01f, 4f6d7dfeff4e, a4769653ffc9, 8071110c1824, 6eeec36ebe05, a282a4424ca4, b0a3a60720be, db08c8c9b869, 85a1de6552f9, dda5373c4a90, 16505c08efec, 0b62584e8d86
+2026-02-22T07:02:16.363Z [INFO] [Lingo.dev] 📥 Received: POST /translations/es
+2026-02-22T07:02:16.381Z [INFO] [Lingo.dev] 🔄 Processing: POST /translations/es
+2026-02-22T07:02:16.477Z [DEBUG] [Lingo.dev] POST /translations/es
+2026-02-22T07:02:16.530Z [DEBUG] [Lingo.dev] Reading request body...
+2026-02-22T07:02:16.561Z [DEBUG] [Lingo.dev] Chunk read, body: {"hashes":["dda5373c4a90","16505c08efec","0b62584e8d86"]}
+2026-02-22T07:02:16.588Z [DEBUG] [Lingo.dev] Parsed hashes: dda5373c4a90,16505c08efec,0b62584e8d86
+2026-02-22T07:02:16.595Z [DEBUG] [Lingo.dev] Reloaded metadata: 33 entries
+2026-02-22T07:02:16.609Z [INFO] [Lingo.dev] 🔄 Translating 3 hashes to es
+2026-02-22T07:02:16.623Z [DEBUG] [Lingo.dev] 🔄 Hashes: dda5373c4a90, 16505c08efec, 0b62584e8d86
+2026-02-22T07:02:16.640Z [INFO] [Lingo.dev] 📥 Received: POST /translations/es
+2026-02-22T07:02:16.653Z [INFO] [Lingo.dev] 🔄 Processing: POST /translations/es
+2026-02-22T07:02:16.666Z [DEBUG] [Lingo.dev] POST /translations/es
+2026-02-22T07:02:16.679Z [DEBUG] [Lingo.dev] Reading request body...
+2026-02-22T07:02:16.696Z [DEBUG] [Lingo.dev] Chunk read, body: {"hashes":["2862c9e1b2e4","cd61a944cf48"]}
+2026-02-22T07:02:16.710Z [DEBUG] [Lingo.dev] Parsed hashes: 2862c9e1b2e4,cd61a944cf48
+2026-02-22T07:02:16.723Z [DEBUG] [Lingo.dev] Reloaded metadata: 33 entries
+2026-02-22T07:02:16.729Z [INFO] [Lingo.dev] 🔄 Translating 2 hashes to es
+2026-02-22T07:02:16.739Z [DEBUG] [Lingo.dev] 🔄 Hashes: 2862c9e1b2e4, cd61a944cf48
+2026-02-22T07:02:16.758Z [DEBUG] [Lingo.dev] [IDLE] Server is now idle
+2026-02-22T07:02:34.621Z [DEBUG] [Lingo.dev] WebSocket client connected. Total clients: 1
+2026-02-22T07:03:49.797Z [INFO] [Lingo.dev] 📥 Received: OPTIONS /translations/es
+2026-02-22T07:03:49.800Z [INFO] [Lingo.dev] 🔄 Processing: OPTIONS /translations/es
+2026-02-22T07:03:49.815Z [DEBUG] [Lingo.dev] OPTIONS /translations/es
+2026-02-22T07:03:49.819Z [INFO] [Lingo.dev] 📥 Received: POST /translations/es
+2026-02-22T07:03:49.829Z [INFO] [Lingo.dev] 🔄 Processing: POST /translations/es
+2026-02-22T07:03:49.840Z [DEBUG] [Lingo.dev] POST /translations/es
+2026-02-22T07:03:49.850Z [DEBUG] [Lingo.dev] Reading request body...
+2026-02-22T07:03:49.859Z [DEBUG] [Lingo.dev] Chunk read, body: {"hashes":["21882c0ef7b8"]}
+2026-02-22T07:03:49.863Z [DEBUG] [Lingo.dev] Parsed hashes: 21882c0ef7b8
+2026-02-22T07:03:49.889Z [DEBUG] [Lingo.dev] Reloaded metadata: 34 entries
+2026-02-22T07:03:49.901Z [INFO] [Lingo.dev] 🔄 Translating 1 hashes to es
+2026-02-22T07:03:49.909Z [DEBUG] [Lingo.dev] 🔄 Hashes: 21882c0ef7b8
+2026-02-22T07:03:49.920Z [DEBUG] [Lingo.dev] [BUSY] Server is now busy (1 active)
+2026-02-22T07:03:50.320Z [DEBUG] [Lingo.dev] [IDLE] Server is now idle
+2026-02-22T07:03:58.804Z [INFO] [Lingo.dev] 📥 Received: OPTIONS /translations/es
+2026-02-22T07:03:58.831Z [INFO] [Lingo.dev] 🔄 Processing: OPTIONS /translations/es
+2026-02-22T07:03:58.874Z [DEBUG] [Lingo.dev] OPTIONS /translations/es
+2026-02-22T07:03:58.884Z [INFO] [Lingo.dev] 📥 Received: POST /translations/es
+2026-02-22T07:03:58.896Z [INFO] [Lingo.dev] 🔄 Processing: POST /translations/es
+2026-02-22T07:03:58.910Z [DEBUG] [Lingo.dev] POST /translations/es
+2026-02-22T07:03:58.920Z [DEBUG] [Lingo.dev] Reading request body...
+2026-02-22T07:03:58.942Z [DEBUG] [Lingo.dev] Chunk read, body: {"hashes":["f18e172a4b74"]}
+2026-02-22T07:03:58.966Z [DEBUG] [Lingo.dev] Parsed hashes: f18e172a4b74
+2026-02-22T07:03:58.988Z [DEBUG] [Lingo.dev] Reloaded metadata: 35 entries
+2026-02-22T07:03:59.015Z [INFO] [Lingo.dev] 🔄 Translating 1 hashes to es
+2026-02-22T07:03:59.047Z [DEBUG] [Lingo.dev] 🔄 Hashes: f18e172a4b74
+2026-02-22T07:03:59.073Z [DEBUG] [Lingo.dev] [BUSY] Server is now busy (1 active)
+2026-02-22T07:03:59.360Z [DEBUG] [Lingo.dev] [IDLE] Server is now idle
+2026-02-22T07:04:21.788Z [INFO] [Lingo.dev] 📥 Received: OPTIONS /translations/es
+2026-02-22T07:04:21.799Z [INFO] [Lingo.dev] 🔄 Processing: OPTIONS /translations/es
+2026-02-22T07:04:21.802Z [DEBUG] [Lingo.dev] OPTIONS /translations/es
+2026-02-22T07:04:21.811Z [INFO] [Lingo.dev] 📥 Received: POST /translations/es
+2026-02-22T07:04:21.821Z [INFO] [Lingo.dev] 🔄 Processing: POST /translations/es
+2026-02-22T07:04:21.826Z [DEBUG] [Lingo.dev] POST /translations/es
+2026-02-22T07:04:21.835Z [DEBUG] [Lingo.dev] Reading request body...
+2026-02-22T07:04:21.841Z [DEBUG] [Lingo.dev] Chunk read, body: {"hashes":["966c48c844d0"]}
+2026-02-22T07:04:21.851Z [DEBUG] [Lingo.dev] Parsed hashes: 966c48c844d0
+2026-02-22T07:04:21.856Z [DEBUG] [Lingo.dev] Reloaded metadata: 36 entries
+2026-02-22T07:04:21.865Z [INFO] [Lingo.dev] 🔄 Translating 1 hashes to es
+2026-02-22T07:04:21.873Z [DEBUG] [Lingo.dev] 🔄 Hashes: 966c48c844d0
+2026-02-22T07:04:21.887Z [DEBUG] [Lingo.dev] [BUSY] Server is now busy (1 active)
+2026-02-22T07:04:22.310Z [DEBUG] [Lingo.dev] [IDLE] Server is now idle
+2026-02-22T07:04:30.788Z [INFO] [Lingo.dev] 📥 Received: OPTIONS /translations/es
+2026-02-22T07:04:30.802Z [INFO] [Lingo.dev] 🔄 Processing: OPTIONS /translations/es
+2026-02-22T07:04:30.813Z [DEBUG] [Lingo.dev] OPTIONS /translations/es
+2026-02-22T07:04:30.819Z [INFO] [Lingo.dev] 📥 Received: POST /translations/es
+2026-02-22T07:04:30.829Z [INFO] [Lingo.dev] 🔄 Processing: POST /translations/es
+2026-02-22T07:04:30.840Z [DEBUG] [Lingo.dev] POST /translations/es
+2026-02-22T07:04:30.850Z [DEBUG] [Lingo.dev] Reading request body...
+2026-02-22T07:04:30.865Z [DEBUG] [Lingo.dev] Chunk read, body: {"hashes":["0d4c38e92bfc"]}
+2026-02-22T07:04:30.874Z [DEBUG] [Lingo.dev] Parsed hashes: 0d4c38e92bfc
+2026-02-22T07:04:30.889Z [DEBUG] [Lingo.dev] Reloaded metadata: 37 entries
+2026-02-22T07:04:30.904Z [INFO] [Lingo.dev] 🔄 Translating 1 hashes to es
+2026-02-22T07:04:30.914Z [DEBUG] [Lingo.dev] 🔄 Hashes: 0d4c38e92bfc
+2026-02-22T07:04:30.925Z [DEBUG] [Lingo.dev] [BUSY] Server is now busy (1 active)
+2026-02-22T07:04:32.784Z [DEBUG] [Lingo.dev] [IDLE] Server is now idle
+2026-02-22T07:04:37.783Z [INFO] [Lingo.dev] 📥 Received: OPTIONS /translations/es
+2026-02-22T07:04:37.798Z [INFO] [Lingo.dev] 🔄 Processing: OPTIONS /translations/es
+2026-02-22T07:04:37.802Z [DEBUG] [Lingo.dev] OPTIONS /translations/es
+2026-02-22T07:04:37.815Z [INFO] [Lingo.dev] 📥 Received: POST /translations/es
+2026-02-22T07:04:37.825Z [INFO] [Lingo.dev] 🔄 Processing: POST /translations/es
+2026-02-22T07:04:37.837Z [DEBUG] [Lingo.dev] POST /translations/es
+2026-02-22T07:04:37.857Z [DEBUG] [Lingo.dev] Reading request body...
+2026-02-22T07:04:37.867Z [DEBUG] [Lingo.dev] Chunk read, body: {"hashes":["e1880af2703b"]}
+2026-02-22T07:04:37.881Z [DEBUG] [Lingo.dev] Parsed hashes: e1880af2703b
+2026-02-22T07:04:37.921Z [DEBUG] [Lingo.dev] Reloaded metadata: 38 entries
+2026-02-22T07:04:37.962Z [INFO] [Lingo.dev] 🔄 Translating 1 hashes to es
+2026-02-22T07:04:37.981Z [DEBUG] [Lingo.dev] 🔄 Hashes: e1880af2703b
+2026-02-22T07:04:37.997Z [DEBUG] [Lingo.dev] [BUSY] Server is now busy (1 active)
+2026-02-22T07:04:39.264Z [DEBUG] [Lingo.dev] [IDLE] Server is now idle
+2026-02-22T07:04:47.794Z [INFO] [Lingo.dev] 📥 Received: OPTIONS /translations/es
+2026-02-22T07:04:47.807Z [INFO] [Lingo.dev] 🔄 Processing: OPTIONS /translations/es
+2026-02-22T07:04:47.814Z [DEBUG] [Lingo.dev] OPTIONS /translations/es
+2026-02-22T07:04:47.818Z [INFO] [Lingo.dev] 📥 Received: POST /translations/es
+2026-02-22T07:04:47.831Z [INFO] [Lingo.dev] 🔄 Processing: POST /translations/es
+2026-02-22T07:04:47.837Z [DEBUG] [Lingo.dev] POST /translations/es
+2026-02-22T07:04:47.846Z [DEBUG] [Lingo.dev] Reading request body...
+2026-02-22T07:04:47.853Z [DEBUG] [Lingo.dev] Chunk read, body: {"hashes":["257ff1a66a7f"]}
+2026-02-22T07:04:47.866Z [DEBUG] [Lingo.dev] Parsed hashes: 257ff1a66a7f
+2026-02-22T07:04:47.879Z [DEBUG] [Lingo.dev] Reloaded metadata: 39 entries
+2026-02-22T07:04:47.889Z [INFO] [Lingo.dev] 🔄 Translating 1 hashes to es
+2026-02-22T07:04:47.901Z [DEBUG] [Lingo.dev] 🔄 Hashes: 257ff1a66a7f
+2026-02-22T07:04:47.916Z [DEBUG] [Lingo.dev] [BUSY] Server is now busy (1 active)
+2026-02-22T07:04:48.323Z [DEBUG] [Lingo.dev] [IDLE] Server is now idle
+2026-02-22T07:05:14.507Z [INFO] [Lingo.dev] 📥 Received: POST /translations/es
+2026-02-22T07:05:14.539Z [INFO] [Lingo.dev] 🔄 Processing: POST /translations/es
+2026-02-22T07:05:14.575Z [DEBUG] [Lingo.dev] POST /translations/es
+2026-02-22T07:05:14.596Z [DEBUG] [Lingo.dev] Reading request body...
+2026-02-22T07:05:14.643Z [DEBUG] [Lingo.dev] Chunk read, body: {"hashes":["2862c9e1b2e4","cd61a944cf48"]}
+2026-02-22T07:05:14.691Z [DEBUG] [Lingo.dev] Parsed hashes: 2862c9e1b2e4,cd61a944cf48
+2026-02-22T07:05:14.714Z [DEBUG] [Lingo.dev] Reloaded metadata: 39 entries
+2026-02-22T07:05:14.733Z [INFO] [Lingo.dev] 🔄 Translating 2 hashes to es
+2026-02-22T07:05:14.757Z [DEBUG] [Lingo.dev] 🔄 Hashes: 2862c9e1b2e4, cd61a944cf48
+2026-02-22T07:05:14.770Z [DEBUG] [Lingo.dev] [BUSY] Server is now busy (1 active)
+2026-02-22T07:05:15.048Z [DEBUG] [Lingo.dev] [IDLE] Server is now idle
+2026-02-22T07:05:15.407Z [INFO] [Lingo.dev] 📥 Received: OPTIONS /translations/es
+2026-02-22T07:05:15.419Z [INFO] [Lingo.dev] 🔄 Processing: OPTIONS /translations/es
+2026-02-22T07:05:15.426Z [DEBUG] [Lingo.dev] OPTIONS /translations/es
+2026-02-22T07:05:15.431Z [INFO] [Lingo.dev] 📥 Received: POST /translations/es
+2026-02-22T07:05:15.443Z [INFO] [Lingo.dev] 🔄 Processing: POST /translations/es
+2026-02-22T07:05:15.453Z [DEBUG] [Lingo.dev] POST /translations/es
+2026-02-22T07:05:15.488Z [DEBUG] [Lingo.dev] Reading request body...
+2026-02-22T07:05:15.512Z [DEBUG] [Lingo.dev] Chunk read, body: {"hashes":["1e0dbfe4e566","591fbaca4841","45b36b53732e","3158d177c1c2","a7eb367706e0"]}
+2026-02-22T07:05:15.538Z [DEBUG] [Lingo.dev] Parsed hashes: 1e0dbfe4e566,591fbaca4841,45b36b53732e,3158d177c1c2,a7eb367706e0
+2026-02-22T07:05:15.553Z [DEBUG] [Lingo.dev] Reloaded metadata: 39 entries
+2026-02-22T07:05:15.580Z [INFO] [Lingo.dev] 🔄 Translating 5 hashes to es
+2026-02-22T07:05:15.595Z [DEBUG] [Lingo.dev] 🔄 Hashes: 1e0dbfe4e566, 591fbaca4841, 45b36b53732e, 3158d177c1c2, a7eb367706e0
+2026-02-22T07:05:15.624Z [DEBUG] [Lingo.dev] [BUSY] Server is now busy (1 active)
+2026-02-22T07:05:15.936Z [DEBUG] [Lingo.dev] [IDLE] Server is now idle
+2026-02-22T07:05:50.781Z [INFO] [Lingo.dev] 📥 Received: OPTIONS /translations/es
+2026-02-22T07:05:50.784Z [INFO] [Lingo.dev] 🔄 Processing: OPTIONS /translations/es
+2026-02-22T07:05:50.797Z [DEBUG] [Lingo.dev] OPTIONS /translations/es
+2026-02-22T07:05:50.804Z [INFO] [Lingo.dev] 📥 Received: POST /translations/es
+2026-02-22T07:05:50.809Z [INFO] [Lingo.dev] 🔄 Processing: POST /translations/es
+2026-02-22T07:05:50.814Z [DEBUG] [Lingo.dev] POST /translations/es
+2026-02-22T07:05:50.823Z [DEBUG] [Lingo.dev] Reading request body...
+2026-02-22T07:05:50.832Z [DEBUG] [Lingo.dev] Chunk read, body: {"hashes":["605ee185c31b"]}
+2026-02-22T07:05:50.843Z [DEBUG] [Lingo.dev] Parsed hashes: 605ee185c31b
+2026-02-22T07:05:50.849Z [DEBUG] [Lingo.dev] Reloaded metadata: 42 entries
+2026-02-22T07:05:50.856Z [INFO] [Lingo.dev] 🔄 Translating 1 hashes to es
+2026-02-22T07:05:50.865Z [DEBUG] [Lingo.dev] 🔄 Hashes: 605ee185c31b
+2026-02-22T07:05:50.886Z [DEBUG] [Lingo.dev] [BUSY] Server is now busy (1 active)
+2026-02-22T07:05:52.127Z [DEBUG] [Lingo.dev] [IDLE] Server is now idle
+2026-02-22T07:05:55.784Z [INFO] [Lingo.dev] 📥 Received: OPTIONS /translations/es
+2026-02-22T07:05:55.806Z [INFO] [Lingo.dev] 🔄 Processing: OPTIONS /translations/es
+2026-02-22T07:05:55.819Z [DEBUG] [Lingo.dev] OPTIONS /translations/es
+2026-02-22T07:05:55.830Z [INFO] [Lingo.dev] 📥 Received: POST /translations/es
+2026-02-22T07:05:55.835Z [INFO] [Lingo.dev] 🔄 Processing: POST /translations/es
+2026-02-22T07:05:55.846Z [DEBUG] [Lingo.dev] POST /translations/es
+2026-02-22T07:05:55.862Z [DEBUG] [Lingo.dev] Reading request body...
+2026-02-22T07:05:55.882Z [DEBUG] [Lingo.dev] Chunk read, body: {"hashes":["842017647962"]}
+2026-02-22T07:05:55.900Z [DEBUG] [Lingo.dev] Parsed hashes: 842017647962
+2026-02-22T07:05:55.918Z [DEBUG] [Lingo.dev] Reloaded metadata: 43 entries
+2026-02-22T07:05:55.927Z [INFO] [Lingo.dev] 🔄 Translating 1 hashes to es
+2026-02-22T07:05:55.941Z [DEBUG] [Lingo.dev] 🔄 Hashes: 842017647962
+2026-02-22T07:05:55.951Z [DEBUG] [Lingo.dev] [BUSY] Server is now busy (1 active)
+2026-02-22T07:05:57.198Z [DEBUG] [Lingo.dev] [IDLE] Server is now idle
+2026-02-22T07:08:04.783Z [INFO] [Lingo.dev] 📥 Received: OPTIONS /translations/es
+2026-02-22T07:08:04.787Z [INFO] [Lingo.dev] 🔄 Processing: OPTIONS /translations/es
+2026-02-22T07:08:04.799Z [DEBUG] [Lingo.dev] OPTIONS /translations/es
+2026-02-22T07:08:04.814Z [INFO] [Lingo.dev] 📥 Received: POST /translations/es
+2026-02-22T07:08:04.830Z [INFO] [Lingo.dev] 🔄 Processing: POST /translations/es
+2026-02-22T07:08:04.843Z [DEBUG] [Lingo.dev] POST /translations/es
+2026-02-22T07:08:04.855Z [DEBUG] [Lingo.dev] Reading request body...
+2026-02-22T07:08:04.867Z [DEBUG] [Lingo.dev] Chunk read, body: {"hashes":["218474ee6e5e"]}
+2026-02-22T07:08:04.878Z [DEBUG] [Lingo.dev] Parsed hashes: 218474ee6e5e
+2026-02-22T07:08:04.900Z [DEBUG] [Lingo.dev] Reloaded metadata: 44 entries
+2026-02-22T07:08:04.912Z [INFO] [Lingo.dev] 🔄 Translating 1 hashes to es
+2026-02-22T07:08:04.925Z [DEBUG] [Lingo.dev] 🔄 Hashes: 218474ee6e5e
+2026-02-22T07:08:04.935Z [DEBUG] [Lingo.dev] [BUSY] Server is now busy (1 active)
+2026-02-22T07:08:07.281Z [DEBUG] [Lingo.dev] [IDLE] Server is now idle
+2026-02-22T07:08:47.790Z [INFO] [Lingo.dev] 📥 Received: OPTIONS /translations/es
+2026-02-22T07:08:47.802Z [INFO] [Lingo.dev] 🔄 Processing: OPTIONS /translations/es
+2026-02-22T07:08:47.806Z [DEBUG] [Lingo.dev] OPTIONS /translations/es
+2026-02-22T07:08:47.817Z [INFO] [Lingo.dev] 📥 Received: POST /translations/es
+2026-02-22T07:08:47.828Z [INFO] [Lingo.dev] 🔄 Processing: POST /translations/es
+2026-02-22T07:08:47.840Z [DEBUG] [Lingo.dev] POST /translations/es
+2026-02-22T07:08:47.849Z [DEBUG] [Lingo.dev] Reading request body...
+2026-02-22T07:08:47.861Z [DEBUG] [Lingo.dev] Chunk read, body: {"hashes":["5eb766c46cdd"]}
+2026-02-22T07:08:47.877Z [DEBUG] [Lingo.dev] Parsed hashes: 5eb766c46cdd
+2026-02-22T07:08:47.891Z [DEBUG] [Lingo.dev] Reloaded metadata: 45 entries
+2026-02-22T07:08:47.897Z [INFO] [Lingo.dev] 🔄 Translating 1 hashes to es
+2026-02-22T07:08:47.912Z [DEBUG] [Lingo.dev] 🔄 Hashes: 5eb766c46cdd
+2026-02-22T07:08:47.924Z [DEBUG] [Lingo.dev] [BUSY] Server is now busy (1 active)
+2026-02-22T07:08:49.504Z [DEBUG] [Lingo.dev] [IDLE] Server is now idle
+2026-02-22T07:08:55.798Z [INFO] [Lingo.dev] 📥 Received: OPTIONS /translations/es
+2026-02-22T07:08:55.813Z [INFO] [Lingo.dev] 🔄 Processing: OPTIONS /translations/es
+2026-02-22T07:08:55.819Z [DEBUG] [Lingo.dev] OPTIONS /translations/es
+2026-02-22T07:08:55.833Z [INFO] [Lingo.dev] 📥 Received: POST /translations/es
+2026-02-22T07:08:55.847Z [INFO] [Lingo.dev] 🔄 Processing: POST /translations/es
+2026-02-22T07:08:55.864Z [DEBUG] [Lingo.dev] POST /translations/es
+2026-02-22T07:08:55.874Z [DEBUG] [Lingo.dev] Reading request body...
+2026-02-22T07:08:55.901Z [DEBUG] [Lingo.dev] Chunk read, body: {"hashes":["91937b9017dd"]}
+2026-02-22T07:08:55.923Z [DEBUG] [Lingo.dev] Parsed hashes: 91937b9017dd
+2026-02-22T07:08:55.949Z [DEBUG] [Lingo.dev] Reloaded metadata: 46 entries
+2026-02-22T07:08:55.979Z [INFO] [Lingo.dev] 🔄 Translating 1 hashes to es
+2026-02-22T07:08:55.996Z [DEBUG] [Lingo.dev] 🔄 Hashes: 91937b9017dd
+2026-02-22T07:08:56.014Z [DEBUG] [Lingo.dev] [BUSY] Server is now busy (1 active)
+2026-02-22T07:08:58.001Z [DEBUG] [Lingo.dev] [IDLE] Server is now idle
+2026-02-22T07:09:01.806Z [INFO] [Lingo.dev] 📥 Received: OPTIONS /translations/es
+2026-02-22T07:09:01.825Z [INFO] [Lingo.dev] 🔄 Processing: OPTIONS /translations/es
+2026-02-22T07:09:01.836Z [DEBUG] [Lingo.dev] OPTIONS /translations/es
+2026-02-22T07:09:01.844Z [INFO] [Lingo.dev] 📥 Received: POST /translations/es
+2026-02-22T07:09:01.858Z [INFO] [Lingo.dev] 🔄 Processing: POST /translations/es
+2026-02-22T07:09:01.874Z [DEBUG] [Lingo.dev] POST /translations/es
+2026-02-22T07:09:01.883Z [DEBUG] [Lingo.dev] Reading request body...
+2026-02-22T07:09:01.898Z [DEBUG] [Lingo.dev] Chunk read, body: {"hashes":["36f6f4491772"]}
+2026-02-22T07:09:01.913Z [DEBUG] [Lingo.dev] Parsed hashes: 36f6f4491772
+2026-02-22T07:09:01.958Z [DEBUG] [Lingo.dev] Reloaded metadata: 47 entries
+2026-02-22T07:09:02.148Z [INFO] [Lingo.dev] 🔄 Translating 1 hashes to es
+2026-02-22T07:09:02.306Z [DEBUG] [Lingo.dev] 🔄 Hashes: 36f6f4491772
+2026-02-22T07:09:02.333Z [DEBUG] [Lingo.dev] [BUSY] Server is now busy (1 active)
+2026-02-22T07:09:03.937Z [DEBUG] [Lingo.dev] [IDLE] Server is now idle
+2026-02-22T07:09:26.781Z [INFO] [Lingo.dev] 📥 Received: OPTIONS /translations/es
+2026-02-22T07:09:26.796Z [INFO] [Lingo.dev] 🔄 Processing: OPTIONS /translations/es
+2026-02-22T07:09:26.811Z [DEBUG] [Lingo.dev] OPTIONS /translations/es
+2026-02-22T07:09:26.822Z [INFO] [Lingo.dev] 📥 Received: POST /translations/es
+2026-02-22T07:09:26.835Z [INFO] [Lingo.dev] 🔄 Processing: POST /translations/es
+2026-02-22T07:09:26.849Z [DEBUG] [Lingo.dev] POST /translations/es
+2026-02-22T07:09:26.892Z [DEBUG] [Lingo.dev] Reading request body...
+2026-02-22T07:09:26.914Z [DEBUG] [Lingo.dev] Chunk read, body: {"hashes":["38c40702130f"]}
+2026-02-22T07:09:26.979Z [DEBUG] [Lingo.dev] Parsed hashes: 38c40702130f
+2026-02-22T07:09:27.004Z [DEBUG] [Lingo.dev] Reloaded metadata: 48 entries
+2026-02-22T07:09:27.028Z [INFO] [Lingo.dev] 🔄 Translating 1 hashes to es
+2026-02-22T07:09:27.122Z [DEBUG] [Lingo.dev] 🔄 Hashes: 38c40702130f
+2026-02-22T07:09:27.135Z [DEBUG] [Lingo.dev] [BUSY] Server is now busy (1 active)
+2026-02-22T07:09:28.650Z [DEBUG] [Lingo.dev] [IDLE] Server is now idle
+2026-02-22T07:09:35.807Z [INFO] [Lingo.dev] 📥 Received: OPTIONS /translations/es
+2026-02-22T07:09:35.886Z [INFO] [Lingo.dev] 🔄 Processing: OPTIONS /translations/es
+2026-02-22T07:09:35.929Z [DEBUG] [Lingo.dev] OPTIONS /translations/es
+2026-02-22T07:09:35.994Z [INFO] [Lingo.dev] 📥 Received: POST /translations/es
+2026-02-22T07:09:36.056Z [INFO] [Lingo.dev] 🔄 Processing: POST /translations/es
+2026-02-22T07:09:36.075Z [DEBUG] [Lingo.dev] POST /translations/es
+2026-02-22T07:09:36.092Z [DEBUG] [Lingo.dev] Reading request body...
+2026-02-22T07:09:36.113Z [DEBUG] [Lingo.dev] Chunk read, body: {"hashes":["a90ed31f0104"]}
+2026-02-22T07:09:36.378Z [DEBUG] [Lingo.dev] Parsed hashes: a90ed31f0104
+2026-02-22T07:09:36.416Z [DEBUG] [Lingo.dev] Reloaded metadata: 49 entries
+2026-02-22T07:09:36.453Z [INFO] [Lingo.dev] 🔄 Translating 1 hashes to es
+2026-02-22T07:09:36.525Z [DEBUG] [Lingo.dev] 🔄 Hashes: a90ed31f0104
+2026-02-22T07:09:36.542Z [DEBUG] [Lingo.dev] [BUSY] Server is now busy (1 active)
+2026-02-22T07:09:38.223Z [DEBUG] [Lingo.dev] [IDLE] Server is now idle
+2026-02-22T07:09:50.780Z [INFO] [Lingo.dev] 📥 Received: OPTIONS /translations/es
+2026-02-22T07:09:50.795Z [INFO] [Lingo.dev] 🔄 Processing: OPTIONS /translations/es
+2026-02-22T07:09:50.799Z [DEBUG] [Lingo.dev] OPTIONS /translations/es
+2026-02-22T07:09:50.809Z [INFO] [Lingo.dev] 📥 Received: POST /translations/es
+2026-02-22T07:09:50.821Z [INFO] [Lingo.dev] 🔄 Processing: POST /translations/es
+2026-02-22T07:09:50.835Z [DEBUG] [Lingo.dev] POST /translations/es
+2026-02-22T07:09:50.847Z [DEBUG] [Lingo.dev] Reading request body...
+2026-02-22T07:09:50.852Z [DEBUG] [Lingo.dev] Chunk read, body: {"hashes":["012db0d7fd55"]}
+2026-02-22T07:09:50.858Z [DEBUG] [Lingo.dev] Parsed hashes: 012db0d7fd55
+2026-02-22T07:09:50.870Z [DEBUG] [Lingo.dev] Reloaded metadata: 50 entries
+2026-02-22T07:09:50.881Z [INFO] [Lingo.dev] 🔄 Translating 1 hashes to es
+2026-02-22T07:09:50.891Z [DEBUG] [Lingo.dev] 🔄 Hashes: 012db0d7fd55
+2026-02-22T07:09:50.896Z [DEBUG] [Lingo.dev] [BUSY] Server is now busy (1 active)
+2026-02-22T07:09:53.046Z [DEBUG] [Lingo.dev] [IDLE] Server is now idle
+2026-02-22T07:09:57.783Z [INFO] [Lingo.dev] 📥 Received: OPTIONS /translations/es
+2026-02-22T07:09:57.798Z [INFO] [Lingo.dev] 🔄 Processing: OPTIONS /translations/es
+2026-02-22T07:09:57.807Z [DEBUG] [Lingo.dev] OPTIONS /translations/es
+2026-02-22T07:09:57.812Z [INFO] [Lingo.dev] 📥 Received: POST /translations/es
+2026-02-22T07:09:57.822Z [INFO] [Lingo.dev] 🔄 Processing: POST /translations/es
+2026-02-22T07:09:57.837Z [DEBUG] [Lingo.dev] POST /translations/es
+2026-02-22T07:09:57.859Z [DEBUG] [Lingo.dev] Reading request body...
+2026-02-22T07:09:57.877Z [DEBUG] [Lingo.dev] Chunk read, body: {"hashes":["44256d49c40a"]}
+2026-02-22T07:09:57.891Z [DEBUG] [Lingo.dev] Parsed hashes: 44256d49c40a
+2026-02-22T07:09:57.906Z [DEBUG] [Lingo.dev] Reloaded metadata: 51 entries
+2026-02-22T07:09:57.918Z [INFO] [Lingo.dev] 🔄 Translating 1 hashes to es
+2026-02-22T07:09:57.973Z [DEBUG] [Lingo.dev] 🔄 Hashes: 44256d49c40a
+2026-02-22T07:09:57.997Z [DEBUG] [Lingo.dev] [BUSY] Server is now busy (1 active)
+2026-02-22T07:10:00.809Z [DEBUG] [Lingo.dev] [IDLE] Server is now idle
+2026-02-22T07:18:08.569Z [INFO] [Lingo.dev] Port 60000 is available, starting new server...
+2026-02-22T07:18:09.528Z [INFO] [Lingo.dev] 🔧 Initializing translator...
+2026-02-22T07:18:09.582Z [DEBUG] [Lingo.dev] Starting translation server on port 60000
+2026-02-22T07:18:09.583Z [INFO] [Lingo.dev] Translation server listening on http://127.0.0.1:60000
+2026-02-22T07:18:09.583Z [INFO] [Lingo.dev] WebSocket server initialized
+2026-02-22T07:18:25.617Z [INFO] [Lingo.dev] 📥 Received: POST /translations/en
+2026-02-22T07:18:25.873Z [INFO] [Lingo.dev] 🔄 Processing: POST /translations/en
+2026-02-22T07:18:26.112Z [DEBUG] [Lingo.dev] POST /translations/en
+2026-02-22T07:18:26.249Z [DEBUG] [Lingo.dev] Reading request body...
+2026-02-22T07:18:26.359Z [DEBUG] [Lingo.dev] Chunk read, body: {"hashes":["2862c9e1b2e4","cd61a944cf48"]}
+2026-02-22T07:18:26.423Z [DEBUG] [Lingo.dev] Parsed hashes: 2862c9e1b2e4,cd61a944cf48
+2026-02-22T07:18:26.559Z [DEBUG] [Lingo.dev] Reloaded metadata: 0 entries
+2026-02-22T07:18:26.635Z [INFO] [Lingo.dev] 🔄 Translating 2 hashes to en
+2026-02-22T07:18:26.680Z [DEBUG] [Lingo.dev] 🔄 Hashes: 2862c9e1b2e4, cd61a944cf48
+2026-02-22T07:18:26.825Z [DEBUG] [Lingo.dev] [BUSY] Server is now busy (1 active)
+2026-02-22T07:18:26.941Z [INFO] [Lingo.dev] 📥 Received: POST /translations/es
+2026-02-22T07:18:27.041Z [INFO] [Lingo.dev] 🔄 Processing: POST /translations/es
+2026-02-22T07:18:27.144Z [DEBUG] [Lingo.dev] POST /translations/es
+2026-02-22T07:18:27.193Z [DEBUG] [Lingo.dev] Reading request body...
+2026-02-22T07:18:27.238Z [DEBUG] [Lingo.dev] Chunk read, body: {"hashes":["2862c9e1b2e4","cd61a944cf48"]}
+2026-02-22T07:18:27.272Z [DEBUG] [Lingo.dev] Parsed hashes: 2862c9e1b2e4,cd61a944cf48
+2026-02-22T07:18:27.309Z [DEBUG] [Lingo.dev] Reloaded metadata: 0 entries
+2026-02-22T07:18:27.353Z [INFO] [Lingo.dev] 🔄 Translating 2 hashes to es
+2026-02-22T07:18:27.399Z [DEBUG] [Lingo.dev] 🔄 Hashes: 2862c9e1b2e4, cd61a944cf48
+2026-02-22T07:18:27.456Z [DEBUG] [Lingo.dev] [IDLE] Server is now idle
+2026-02-22T07:18:29.605Z [INFO] [Lingo.dev] 📥 Received: OPTIONS /translations/es
+2026-02-22T07:18:29.716Z [INFO] [Lingo.dev] 🔄 Processing: OPTIONS /translations/es
+2026-02-22T07:18:29.779Z [DEBUG] [Lingo.dev] OPTIONS /translations/es
+2026-02-22T07:18:29.828Z [INFO] [Lingo.dev] 📥 Received: POST /translations/es
+2026-02-22T07:18:29.957Z [INFO] [Lingo.dev] 🔄 Processing: POST /translations/es
+2026-02-22T07:18:30.003Z [DEBUG] [Lingo.dev] POST /translations/es
+2026-02-22T07:18:30.042Z [DEBUG] [Lingo.dev] Reading request body...
+2026-02-22T07:18:30.088Z [DEBUG] [Lingo.dev] Chunk read, body: {"hashes":["0b054301b57d","9426f7803679","d4230a331ea8","609196abc8a3","8c8b0ce19222","1c1b1599025c","767db59dd383","4f6d7dfeff4e","a4769653ffc9","8071110c1824","6eeec36ebe05","a282a4424ca4","b0a3a60720be","db08c8c9b869","85a1de6552f9"]}
+2026-02-22T07:18:30.121Z [DEBUG] [Lingo.dev] Parsed hashes: 0b054301b57d,9426f7803679,d4230a331ea8,609196abc8a3,8c8b0ce19222,1c1b1599025c,767db59dd383,4f6d7dfeff4e,a4769653ffc9,8071110c1824,6eeec36ebe05,a282a4424ca4,b0a3a60720be,db08c8c9b869,85a1de6552f9
+2026-02-22T07:18:30.146Z [DEBUG] [Lingo.dev] Reloaded metadata: 0 entries
+2026-02-22T07:18:30.175Z [INFO] [Lingo.dev] 🔄 Translating 15 hashes to es
+2026-02-22T07:18:30.194Z [DEBUG] [Lingo.dev] 🔄 Hashes: 0b054301b57d, 9426f7803679, d4230a331ea8, 609196abc8a3, 8c8b0ce19222, 1c1b1599025c, 767db59dd383, 4f6d7dfeff4e, a4769653ffc9, 8071110c1824, 6eeec36ebe05, a282a4424ca4, b0a3a60720be, db08c8c9b869, 85a1de6552f9
+2026-02-22T07:18:30.216Z [DEBUG] [Lingo.dev] [BUSY] Server is now busy (1 active)
+2026-02-22T07:18:30.245Z [DEBUG] [Lingo.dev] [IDLE] Server is now idle
+2026-02-22T07:18:35.520Z [INFO] [Lingo.dev] 📥 Received: OPTIONS /translations/en
+2026-02-22T07:18:35.785Z [INFO] [Lingo.dev] 🔄 Processing: OPTIONS /translations/en
+2026-02-22T07:18:35.955Z [DEBUG] [Lingo.dev] OPTIONS /translations/en
+2026-02-22T07:18:36.015Z [INFO] [Lingo.dev] 📥 Received: POST /translations/en
+2026-02-22T07:18:36.045Z [INFO] [Lingo.dev] 🔄 Processing: POST /translations/en
+2026-02-22T07:18:36.096Z [DEBUG] [Lingo.dev] POST /translations/en
+2026-02-22T07:18:36.128Z [DEBUG] [Lingo.dev] Reading request body...
+2026-02-22T07:18:36.167Z [DEBUG] [Lingo.dev] Chunk read, body: {"hashes":["0b054301b57d","9426f7803679","d4230a331ea8","609196abc8a3","8c8b0ce19222","1c1b1599025c","767db59dd383","4f6d7dfeff4e","a4769653ffc9","8071110c1824","6eeec36ebe05","a282a4424ca4","b0a3a60720be","db08c8c9b869","85a1de6552f9"]}
+2026-02-22T07:18:36.192Z [DEBUG] [Lingo.dev] Parsed hashes: 0b054301b57d,9426f7803679,d4230a331ea8,609196abc8a3,8c8b0ce19222,1c1b1599025c,767db59dd383,4f6d7dfeff4e,a4769653ffc9,8071110c1824,6eeec36ebe05,a282a4424ca4,b0a3a60720be,db08c8c9b869,85a1de6552f9
+2026-02-22T07:18:36.216Z [DEBUG] [Lingo.dev] Reloaded metadata: 0 entries
+2026-02-22T07:18:36.240Z [INFO] [Lingo.dev] 🔄 Translating 15 hashes to en
+2026-02-22T07:18:36.254Z [DEBUG] [Lingo.dev] 🔄 Hashes: 0b054301b57d, 9426f7803679, d4230a331ea8, 609196abc8a3, 8c8b0ce19222, 1c1b1599025c, 767db59dd383, 4f6d7dfeff4e, a4769653ffc9, 8071110c1824, 6eeec36ebe05, a282a4424ca4, b0a3a60720be, db08c8c9b869, 85a1de6552f9
+2026-02-22T07:18:36.296Z [DEBUG] [Lingo.dev] [BUSY] Server is now busy (1 active)
+2026-02-22T07:18:36.347Z [DEBUG] [Lingo.dev] WebSocket client connected. Total clients: 1
+2026-02-22T07:18:36.408Z [DEBUG] [Lingo.dev] [IDLE] Server is now idle
+2026-02-22T07:19:06.816Z [DEBUG] [Lingo.dev] WebSocket client connected. Total clients: 2
+2026-02-22T07:19:15.270Z [INFO] [Lingo.dev] 📥 Received: POST /translations/en
+2026-02-22T07:19:15.297Z [INFO] [Lingo.dev] 🔄 Processing: POST /translations/en
+2026-02-22T07:19:15.356Z [DEBUG] [Lingo.dev] POST /translations/en
+2026-02-22T07:19:15.372Z [DEBUG] [Lingo.dev] Reading request body...
+2026-02-22T07:19:15.460Z [DEBUG] [Lingo.dev] Chunk read, body: {"hashes":["2862c9e1b2e4","cd61a944cf48"]}
+2026-02-22T07:19:15.549Z [DEBUG] [Lingo.dev] Parsed hashes: 2862c9e1b2e4,cd61a944cf48
+2026-02-22T07:19:15.614Z [DEBUG] [Lingo.dev] Reloaded metadata: 0 entries
+2026-02-22T07:19:15.717Z [INFO] [Lingo.dev] 🔄 Translating 2 hashes to en
+2026-02-22T07:19:15.750Z [DEBUG] [Lingo.dev] 🔄 Hashes: 2862c9e1b2e4, cd61a944cf48
+2026-02-22T07:19:15.853Z [DEBUG] [Lingo.dev] [BUSY] Server is now busy (1 active)
+2026-02-22T07:19:15.895Z [DEBUG] [Lingo.dev] [IDLE] Server is now idle
+2026-02-22T07:19:15.935Z [INFO] [Lingo.dev] 📥 Received: OPTIONS /translations/en
+2026-02-22T07:19:15.965Z [INFO] [Lingo.dev] 🔄 Processing: OPTIONS /translations/en
+2026-02-22T07:19:15.980Z [DEBUG] [Lingo.dev] OPTIONS /translations/en
+2026-02-22T07:19:16.033Z [INFO] [Lingo.dev] 📥 Received: POST /translations/en
+2026-02-22T07:19:16.116Z [INFO] [Lingo.dev] 🔄 Processing: POST /translations/en
+2026-02-22T07:19:16.163Z [DEBUG] [Lingo.dev] POST /translations/en
+2026-02-22T07:19:16.172Z [DEBUG] [Lingo.dev] Reading request body...
+2026-02-22T07:19:16.184Z [DEBUG] [Lingo.dev] Chunk read, body: {"hashes":["07355b88c392"]}
+2026-02-22T07:19:16.198Z [DEBUG] [Lingo.dev] Parsed hashes: 07355b88c392
+2026-02-22T07:19:16.234Z [DEBUG] [Lingo.dev] Reloaded metadata: 0 entries
+2026-02-22T07:19:16.252Z [INFO] [Lingo.dev] 🔄 Translating 1 hashes to en
+2026-02-22T07:19:16.301Z [DEBUG] [Lingo.dev] 🔄 Hashes: 07355b88c392
+2026-02-22T07:19:16.364Z [DEBUG] [Lingo.dev] [BUSY] Server is now busy (1 active)
+2026-02-22T07:19:16.491Z [DEBUG] [Lingo.dev] [IDLE] Server is now idle
+2026-02-22T07:19:21.706Z [INFO] [Lingo.dev] 📥 Received: POST /translations/en
+2026-02-22T07:19:21.735Z [INFO] [Lingo.dev] 🔄 Processing: POST /translations/en
+2026-02-22T07:19:21.855Z [DEBUG] [Lingo.dev] POST /translations/en
+2026-02-22T07:19:21.898Z [DEBUG] [Lingo.dev] Reading request body...
+2026-02-22T07:19:21.996Z [DEBUG] [Lingo.dev] Chunk read, body: {"hashes":["4c942e4dbefb"]}
+2026-02-22T07:19:22.045Z [DEBUG] [Lingo.dev] Parsed hashes: 4c942e4dbefb
+2026-02-22T07:19:22.182Z [DEBUG] [Lingo.dev] Reloaded metadata: 0 entries
+2026-02-22T07:19:22.249Z [INFO] [Lingo.dev] 🔄 Translating 1 hashes to en
+2026-02-22T07:19:22.295Z [DEBUG] [Lingo.dev] 🔄 Hashes: 4c942e4dbefb
+2026-02-22T07:19:22.321Z [DEBUG] [Lingo.dev] [BUSY] Server is now busy (1 active)
+2026-02-22T07:19:22.354Z [INFO] [Lingo.dev] 📥 Received: POST /translations/en
+2026-02-22T07:19:22.399Z [INFO] [Lingo.dev] 🔄 Processing: POST /translations/en
+2026-02-22T07:19:22.460Z [DEBUG] [Lingo.dev] POST /translations/en
+2026-02-22T07:19:22.514Z [DEBUG] [Lingo.dev] Reading request body...
+2026-02-22T07:19:22.554Z [DEBUG] [Lingo.dev] Chunk read, body: {"hashes":["2862c9e1b2e4","cd61a944cf48"]}
+2026-02-22T07:19:22.582Z [DEBUG] [Lingo.dev] Parsed hashes: 2862c9e1b2e4,cd61a944cf48
+2026-02-22T07:19:22.630Z [DEBUG] [Lingo.dev] Reloaded metadata: 0 entries
+2026-02-22T07:19:22.664Z [INFO] [Lingo.dev] 🔄 Translating 2 hashes to en
+2026-02-22T07:19:22.739Z [DEBUG] [Lingo.dev] 🔄 Hashes: 2862c9e1b2e4, cd61a944cf48
+2026-02-22T07:19:22.797Z [DEBUG] [Lingo.dev] [IDLE] Server is now idle
+2026-02-22T07:19:22.849Z [INFO] [Lingo.dev] 📥 Received: OPTIONS /translations/en
+2026-02-22T07:19:22.903Z [INFO] [Lingo.dev] 🔄 Processing: OPTIONS /translations/en
+2026-02-22T07:19:22.948Z [DEBUG] [Lingo.dev] OPTIONS /translations/en
+2026-02-22T07:19:22.998Z [INFO] [Lingo.dev] 📥 Received: POST /translations/en
+2026-02-22T07:19:23.037Z [INFO] [Lingo.dev] 🔄 Processing: POST /translations/en
+2026-02-22T07:19:23.078Z [DEBUG] [Lingo.dev] POST /translations/en
+2026-02-22T07:19:23.135Z [DEBUG] [Lingo.dev] Reading request body...
+2026-02-22T07:19:23.182Z [DEBUG] [Lingo.dev] Chunk read, body: {"hashes":["94b9f9f52fa9","b24f016ea03b","89ff8d388b61","1cabcb47cff7","d19bf32bb996","f971a3a4315d","549a339ce2bf","9ab9060ebe43","e623e9856280","0ba2e78b19a5","b114ee3171ab"]}
+2026-02-22T07:19:23.202Z [DEBUG] [Lingo.dev] Parsed hashes: 94b9f9f52fa9,b24f016ea03b,89ff8d388b61,1cabcb47cff7,d19bf32bb996,f971a3a4315d,549a339ce2bf,9ab9060ebe43,e623e9856280,0ba2e78b19a5,b114ee3171ab
+2026-02-22T07:19:23.212Z [DEBUG] [Lingo.dev] Reloaded metadata: 0 entries
+2026-02-22T07:19:23.221Z [INFO] [Lingo.dev] 🔄 Translating 11 hashes to en
+2026-02-22T07:19:23.233Z [DEBUG] [Lingo.dev] 🔄 Hashes: 94b9f9f52fa9, b24f016ea03b, 89ff8d388b61, 1cabcb47cff7, d19bf32bb996, f971a3a4315d, 549a339ce2bf, 9ab9060ebe43, e623e9856280, 0ba2e78b19a5, b114ee3171ab
+2026-02-22T07:19:23.249Z [DEBUG] [Lingo.dev] [BUSY] Server is now busy (1 active)
+2026-02-22T07:19:23.256Z [DEBUG] [Lingo.dev] [IDLE] Server is now idle
+2026-02-22T07:19:41.800Z [INFO] [Lingo.dev] 📥 Received: POST /translations/en
+2026-02-22T07:19:41.877Z [INFO] [Lingo.dev] 🔄 Processing: POST /translations/en
+2026-02-22T07:19:41.975Z [DEBUG] [Lingo.dev] POST /translations/en
+2026-02-22T07:19:42.019Z [DEBUG] [Lingo.dev] Reading request body...
+2026-02-22T07:19:42.084Z [DEBUG] [Lingo.dev] Chunk read, body: {"hashes":["2862c9e1b2e4","cd61a944cf48"]}
+2026-02-22T07:19:42.219Z [DEBUG] [Lingo.dev] Parsed hashes: 2862c9e1b2e4,cd61a944cf48
+2026-02-22T07:19:42.332Z [DEBUG] [Lingo.dev] Reloaded metadata: 0 entries
+2026-02-22T07:19:42.412Z [INFO] [Lingo.dev] 🔄 Translating 2 hashes to en
+2026-02-22T07:19:42.440Z [DEBUG] [Lingo.dev] 🔄 Hashes: 2862c9e1b2e4, cd61a944cf48
+2026-02-22T07:19:42.474Z [DEBUG] [Lingo.dev] [BUSY] Server is now busy (1 active)
+2026-02-22T07:19:42.514Z [DEBUG] [Lingo.dev] [IDLE] Server is now idle
+2026-02-22T07:19:46.033Z [INFO] [Lingo.dev] 📥 Received: POST /translations/en
+2026-02-22T07:19:46.117Z [INFO] [Lingo.dev] 🔄 Processing: POST /translations/en
+2026-02-22T07:19:46.168Z [DEBUG] [Lingo.dev] POST /translations/en
+2026-02-22T07:19:46.212Z [DEBUG] [Lingo.dev] Reading request body...
+2026-02-22T07:19:46.318Z [DEBUG] [Lingo.dev] Chunk read, body: {"hashes":["2862c9e1b2e4","cd61a944cf48"]}
+2026-02-22T07:19:46.384Z [DEBUG] [Lingo.dev] Parsed hashes: 2862c9e1b2e4,cd61a944cf48
+2026-02-22T07:19:46.406Z [DEBUG] [Lingo.dev] Reloaded metadata: 0 entries
+2026-02-22T07:19:46.440Z [INFO] [Lingo.dev] 🔄 Translating 2 hashes to en
+2026-02-22T07:19:46.471Z [DEBUG] [Lingo.dev] 🔄 Hashes: 2862c9e1b2e4, cd61a944cf48
+2026-02-22T07:19:46.495Z [DEBUG] [Lingo.dev] [BUSY] Server is now busy (1 active)
+2026-02-22T07:19:46.524Z [INFO] [Lingo.dev] 📥 Received: POST /translations/en
+2026-02-22T07:19:46.571Z [INFO] [Lingo.dev] 🔄 Processing: POST /translations/en
+2026-02-22T07:19:46.599Z [DEBUG] [Lingo.dev] POST /translations/en
+2026-02-22T07:19:46.646Z [DEBUG] [Lingo.dev] Reading request body...
+2026-02-22T07:19:46.816Z [DEBUG] [Lingo.dev] Chunk read, body: {"hashes":["4c942e4dbefb"]}
+2026-02-22T07:19:46.842Z [DEBUG] [Lingo.dev] Parsed hashes: 4c942e4dbefb
+2026-02-22T07:19:46.879Z [DEBUG] [Lingo.dev] Reloaded metadata: 0 entries
+2026-02-22T07:19:46.973Z [INFO] [Lingo.dev] 🔄 Translating 1 hashes to en
+2026-02-22T07:19:46.999Z [DEBUG] [Lingo.dev] 🔄 Hashes: 4c942e4dbefb
+2026-02-22T07:19:47.029Z [DEBUG] [Lingo.dev] [IDLE] Server is now idle
+2026-02-22T07:20:32.036Z [INFO] [Lingo.dev] 📥 Received: POST /translations/en
+2026-02-22T07:20:32.215Z [INFO] [Lingo.dev] 🔄 Processing: POST /translations/en
+2026-02-22T07:20:32.350Z [DEBUG] [Lingo.dev] POST /translations/en
+2026-02-22T07:20:32.439Z [DEBUG] [Lingo.dev] Reading request body...
+2026-02-22T07:20:32.517Z [DEBUG] [Lingo.dev] Chunk read, body: {"hashes":["2862c9e1b2e4","cd61a944cf48"]}
+2026-02-22T07:20:32.583Z [DEBUG] [Lingo.dev] Parsed hashes: 2862c9e1b2e4,cd61a944cf48
+2026-02-22T07:20:32.641Z [DEBUG] [Lingo.dev] Reloaded metadata: 14 entries
+2026-02-22T07:20:32.669Z [INFO] [Lingo.dev] 🔄 Translating 2 hashes to en
+2026-02-22T07:20:32.683Z [DEBUG] [Lingo.dev] 🔄 Hashes: 2862c9e1b2e4, cd61a944cf48
+2026-02-22T07:20:32.753Z [DEBUG] [Lingo.dev] [BUSY] Server is now busy (1 active)
+2026-02-22T07:20:32.804Z [DEBUG] [Lingo.dev] [IDLE] Server is now idle
+2026-02-22T07:20:33.232Z [INFO] [Lingo.dev] 📥 Received: OPTIONS /translations/en
+2026-02-22T07:20:33.318Z [INFO] [Lingo.dev] 🔄 Processing: OPTIONS /translations/en
+2026-02-22T07:20:33.417Z [DEBUG] [Lingo.dev] OPTIONS /translations/en
+2026-02-22T07:20:33.518Z [INFO] [Lingo.dev] 📥 Received: POST /translations/en
+2026-02-22T07:20:33.632Z [INFO] [Lingo.dev] 🔄 Processing: POST /translations/en
+2026-02-22T07:20:33.667Z [DEBUG] [Lingo.dev] POST /translations/en
+2026-02-22T07:20:33.688Z [DEBUG] [Lingo.dev] Reading request body...
+2026-02-22T07:20:33.708Z [DEBUG] [Lingo.dev] Chunk read, body: {"hashes":["d7ff446991e5","5d0b75a12c78","8d0c6c4a2426","d74f89a1fabe","b72910243572","358f2e59bd58","3609b9a955d2","09477dab6579","5e4308d17489","2449eb53d2a0","fadc056f73ae","4e48315f9915","799c86a1fa1b","16065b0b23c3"]}
+2026-02-22T07:20:33.740Z [DEBUG] [Lingo.dev] Parsed hashes: d7ff446991e5,5d0b75a12c78,8d0c6c4a2426,d74f89a1fabe,b72910243572,358f2e59bd58,3609b9a955d2,09477dab6579,5e4308d17489,2449eb53d2a0,fadc056f73ae,4e48315f9915,799c86a1fa1b,16065b0b23c3
+2026-02-22T07:20:33.882Z [DEBUG] [Lingo.dev] Reloaded metadata: 14 entries
+2026-02-22T07:20:33.969Z [INFO] [Lingo.dev] 🔄 Translating 14 hashes to en
+2026-02-22T07:20:34.009Z [DEBUG] [Lingo.dev] 🔄 Hashes: d7ff446991e5, 5d0b75a12c78, 8d0c6c4a2426, d74f89a1fabe, b72910243572, 358f2e59bd58, 3609b9a955d2, 09477dab6579, 5e4308d17489, 2449eb53d2a0, fadc056f73ae, 4e48315f9915, 799c86a1fa1b, 16065b0b23c3
+2026-02-22T07:20:34.064Z [DEBUG] [Lingo.dev] [BUSY] Server is now busy (1 active)
+2026-02-22T07:20:34.169Z [DEBUG] [Lingo.dev] [IDLE] Server is now idle
+2026-02-22T07:20:44.017Z [INFO] [Lingo.dev] 📥 Received: POST /translations/en
+2026-02-22T07:20:44.087Z [INFO] [Lingo.dev] 🔄 Processing: POST /translations/en
+2026-02-22T07:20:44.179Z [DEBUG] [Lingo.dev] POST /translations/en
+2026-02-22T07:20:44.282Z [DEBUG] [Lingo.dev] Reading request body...
+2026-02-22T07:20:44.362Z [DEBUG] [Lingo.dev] Chunk read, body: {"hashes":["2862c9e1b2e4","cd61a944cf48"]}
+2026-02-22T07:20:44.383Z [DEBUG] [Lingo.dev] Parsed hashes: 2862c9e1b2e4,cd61a944cf48
+2026-02-22T07:20:44.481Z [DEBUG] [Lingo.dev] Reloaded metadata: 20 entries
+2026-02-22T07:20:44.609Z [INFO] [Lingo.dev] 🔄 Translating 2 hashes to en
+2026-02-22T07:20:44.780Z [DEBUG] [Lingo.dev] 🔄 Hashes: 2862c9e1b2e4, cd61a944cf48
+2026-02-22T07:20:44.801Z [DEBUG] [Lingo.dev] [BUSY] Server is now busy (1 active)
+2026-02-22T07:20:44.838Z [INFO] [Lingo.dev] 📥 Received: OPTIONS /translations/en
+2026-02-22T07:20:44.884Z [INFO] [Lingo.dev] 🔄 Processing: OPTIONS /translations/en
+2026-02-22T07:20:44.950Z [DEBUG] [Lingo.dev] OPTIONS /translations/en
+2026-02-22T07:20:44.981Z [DEBUG] [Lingo.dev] [IDLE] Server is now idle
+2026-02-22T07:20:45.039Z [INFO] [Lingo.dev] 📥 Received: POST /translations/en
+2026-02-22T07:20:45.079Z [INFO] [Lingo.dev] 🔄 Processing: POST /translations/en
+2026-02-22T07:20:45.149Z [DEBUG] [Lingo.dev] POST /translations/en
+2026-02-22T07:20:45.214Z [DEBUG] [Lingo.dev] Reading request body...
+2026-02-22T07:20:45.231Z [DEBUG] [Lingo.dev] Chunk read, body: {"hashes":["6a91da5b0b31","26feff4dd69e","fd49ee426cfc","26b79f819781","6ede61769e9e","f2217af7da0c"]}
+2026-02-22T07:20:45.283Z [DEBUG] [Lingo.dev] Parsed hashes: 6a91da5b0b31,26feff4dd69e,fd49ee426cfc,26b79f819781,6ede61769e9e,f2217af7da0c
+2026-02-22T07:20:45.356Z [DEBUG] [Lingo.dev] Reloaded metadata: 20 entries
+2026-02-22T07:20:45.389Z [INFO] [Lingo.dev] 🔄 Translating 6 hashes to en
+2026-02-22T07:20:45.466Z [DEBUG] [Lingo.dev] 🔄 Hashes: 6a91da5b0b31, 26feff4dd69e, fd49ee426cfc, 26b79f819781, 6ede61769e9e, f2217af7da0c
+2026-02-22T07:20:45.848Z [DEBUG] [Lingo.dev] [BUSY] Server is now busy (1 active)
+2026-02-22T07:20:45.918Z [DEBUG] [Lingo.dev] [IDLE] Server is now idle
+2026-02-22T07:21:02.231Z [INFO] [Lingo.dev] 📥 Received: POST /translations/en
+2026-02-22T07:21:02.450Z [INFO] [Lingo.dev] 🔄 Processing: POST /translations/en
+2026-02-22T07:21:02.560Z [DEBUG] [Lingo.dev] POST /translations/en
+2026-02-22T07:21:02.622Z [DEBUG] [Lingo.dev] Reading request body...
+2026-02-22T07:21:02.702Z [DEBUG] [Lingo.dev] Chunk read, body: {"hashes":["2862c9e1b2e4","cd61a944cf48"]}
+2026-02-22T07:21:02.900Z [DEBUG] [Lingo.dev] Parsed hashes: 2862c9e1b2e4,cd61a944cf48
+2026-02-22T07:21:03.064Z [DEBUG] [Lingo.dev] Reloaded metadata: 20 entries
+2026-02-22T07:21:03.440Z [INFO] [Lingo.dev] 🔄 Translating 2 hashes to en
+2026-02-22T07:21:03.512Z [DEBUG] [Lingo.dev] 🔄 Hashes: 2862c9e1b2e4, cd61a944cf48
+2026-02-22T07:21:03.652Z [DEBUG] [Lingo.dev] [BUSY] Server is now busy (1 active)
+2026-02-22T07:21:03.714Z [DEBUG] [Lingo.dev] [IDLE] Server is now idle
+2026-02-22T07:21:57.866Z [INFO] [Lingo.dev] 📥 Received: OPTIONS /translations/en
+2026-02-22T07:21:57.941Z [INFO] [Lingo.dev] 🔄 Processing: OPTIONS /translations/en
+2026-02-22T07:21:57.951Z [DEBUG] [Lingo.dev] OPTIONS /translations/en
+2026-02-22T07:21:57.956Z [INFO] [Lingo.dev] 📥 Received: POST /translations/en
+2026-02-22T07:21:57.977Z [INFO] [Lingo.dev] 🔄 Processing: POST /translations/en
+2026-02-22T07:21:57.990Z [DEBUG] [Lingo.dev] POST /translations/en
+2026-02-22T07:21:58.006Z [DEBUG] [Lingo.dev] Reading request body...
+2026-02-22T07:21:58.051Z [DEBUG] [Lingo.dev] Chunk read, body: {"hashes":["c59abcbf94c8"]}
+2026-02-22T07:21:58.061Z [DEBUG] [Lingo.dev] Parsed hashes: c59abcbf94c8
+2026-02-22T07:21:58.071Z [DEBUG] [Lingo.dev] Reloaded metadata: 21 entries
+2026-02-22T07:21:58.103Z [INFO] [Lingo.dev] 🔄 Translating 1 hashes to en
+2026-02-22T07:21:58.114Z [DEBUG] [Lingo.dev] 🔄 Hashes: c59abcbf94c8
+2026-02-22T07:21:58.145Z [DEBUG] [Lingo.dev] [BUSY] Server is now busy (1 active)
+2026-02-22T07:21:58.487Z [DEBUG] [Lingo.dev] [IDLE] Server is now idle
+2026-02-22T07:36:36.501Z [INFO] [Lingo.dev] 🔧 Initializing translator...
+2026-02-22T07:36:37.727Z [DEBUG] [Lingo.dev] Starting translation server on port 60000
+2026-02-22T07:36:37.731Z [INFO] [Lingo.dev] Translation server listening on http://127.0.0.1:60000
+2026-02-22T07:36:37.782Z [INFO] [Lingo.dev] WebSocket server initialized
+2026-02-22T07:36:37.784Z [DEBUG] [Lingo.dev] Reloaded metadata: 78 entries
+2026-02-22T07:36:37.785Z [DEBUG] [Lingo.dev] Reloaded metadata: 78 entries
+2026-02-22T07:36:37.790Z [DEBUG] [Lingo.dev] Reloaded metadata: 78 entries
+2026-02-22T07:36:37.791Z [DEBUG] [Lingo.dev] Reloaded metadata: 78 entries
+2026-02-22T07:36:37.792Z [INFO] [Lingo.dev] Translating all 78 entries to en
+2026-02-22T07:36:37.793Z [INFO] [Lingo.dev] Translating all 78 entries to es
+2026-02-22T07:36:37.793Z [INFO] [Lingo.dev] Translating all 78 entries to zh
+2026-02-22T07:36:37.794Z [INFO] [Lingo.dev] Translating all 78 entries to ar
+2026-02-22T07:36:59.108Z [INFO] [Lingo.dev] Translation server stopped

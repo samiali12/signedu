@@ -3,7 +3,6 @@
 import { LeaderboardEntry } from "@/types/leaderboard";
 import { Medal, Trophy } from "lucide-react";
 import React, { useEffect, useState } from "react";
-import T from "../shared/T";
 import useProgress from "@/hooks/useProgress";
 import { timeAgo } from "@/utils/leaderboard";
 import { pusherClient } from "@/lib/pusher";
@@ -62,10 +61,10 @@ const Leaderboard = () => {
           <Trophy size={40} className="text-yellow-400" />
         </div>
         <h1 className="text-4xl font-extrabold text-white mb-2">
-          <T text="Global Leaderboard" />
+          Global Leaderboard
         </h1>
         <p className="text-gray-400">
-          <T text="Top signers from around the world. Updated in real-time." />
+          Top signers from around the world. Updated in real-time.
         </p>
       </div>
 
@@ -73,13 +72,11 @@ const Leaderboard = () => {
         <div className="bg-indigo-950 border border-indigo-700 rounded-2xl px-6 py-4 flex items-center justify-between">
           <div className="flex items-center gap-4">
             <div className="bg-indigo-800 rounded-full w-10 h-10 flex items-center justify-center font-bold text-indigo-200">
-              #{myRank}
+              {myRank}
             </div>
             <div>
               <p className="text-white font-bold">{progress.userName}</p>
-              <p className="text-indigo-300 text-sm">
-                <T text="Your current rank" />
-              </p>
+              <p className="text-indigo-300 text-sm">Your current rank</p>
             </div>
           </div>
           <div className="text-right">
@@ -87,7 +84,7 @@ const Leaderboard = () => {
               {progress.totalScore} pts
             </p>
             <p className="text-gray-400 text-xs">
-              {progress.signsLearned} <T text="signs" />
+              {progress.signsLearned} signs
             </p>
           </div>
         </div>
@@ -96,18 +93,10 @@ const Leaderboard = () => {
       <div className="bg-gray-900 border border-gray-800 rounded-2xl overflow-hidden">
         <div className="grid grid-cols-12 text-gray-500 text-xs uppercase tracking-wider px-5 py-3 border-b border-gray-800">
           <span className="col-span-1">#</span>
-          <span className="col-span-5">
-            <T text="Signer" />
-          </span>
-          <span className="col-span-2 text-center">
-            <T text="Signs" />
-          </span>
-          <span className="col-span-2 text-center">
-            <T text="Jams" />
-          </span>
-          <span className="col-span-2 text-right">
-            <T text="Score" />
-          </span>
+          <span className="col-span-5">Signer</span>
+          <span className="col-span-2 text-center">Signs</span>
+          <span className="col-span-2 text-center">Jams</span>
+          <span className="col-span-2 text-right">Score</span>
         </div>
 
         {loading ? (
@@ -117,9 +106,7 @@ const Leaderboard = () => {
         ) : board.length === 0 ? (
           <div className="text-center py-16 text-gray-600">
             <p className="text-4xl mb-3">🏆</p>
-            <p>
-              <T text="No entries yet. Complete a lesson to appear here!" />
-            </p>
+            <p>No entries yet. Complete a lesson to appear here!</p>
           </div>
         ) : (
           board.map((entry, i) => {
@@ -180,7 +167,7 @@ const Leaderboard = () => {
 
       <div className="flex items-center justify-center gap-2 text-gray-600 text-sm">
         <div className="w-2 h-2 bg-green-400 rounded-full animate-pulse" />
-        <T text="Leaderboard updates in real-time" />
+        <p>Leaderboard updates in real-time</p>
       </div>
     </div>
   );

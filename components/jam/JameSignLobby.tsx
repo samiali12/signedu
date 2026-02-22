@@ -48,14 +48,12 @@ const JamSignLobby = ({
           className="w-full bg-indigo-600 hover:bg-indigo-500 text-white py-3 rounded-xl font-semibold transition flex items-center justify-center gap-2"
         >
           <Hand size={18} />
-          <T text="Create New Room" />
+          Create New Room
         </button>
 
         <div className="flex items-center gap-3 text-gray-600">
           <div className="flex-1 h-px bg-gray-800" />
-          <span className="text-sm">
-            <T text="or join existing" />
-          </span>
+          <span className="text-sm">or join existing</span>
           <div className="flex-1 h-px bg-gray-800" />
         </div>
 

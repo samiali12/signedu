@@ -1,5 +1,5 @@
 "use client";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { Star, Edit2, Check, BookOpen, Hand, Zap } from "lucide-react";
 import useProgress from "@/hooks/useProgress";
 import { BADGE_META } from "@/constant/constant";
@@ -113,9 +113,7 @@ const Profile = () => {
           <p className="text-yellow-400 font-extrabold text-2xl">
             {progress.totalScore}
           </p>
-          <p className="text-gray-400 text-xs">
-            <T text="total points" />
-          </p>
+          <p className="text-gray-400 text-xs">total points</p>
         </div>
       </div>
 

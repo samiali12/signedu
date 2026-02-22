@@ -1,4 +1,5 @@
 import { BADGE_META } from "@/constant/constant";
+import T from "../shared/T";
 
 interface ProfileBageProps {
   id: string;
@@ -18,8 +19,12 @@ const ProfileBage = ({ id, earned }: ProfileBageProps) => {
       }`}
     >
       <span className="text-3xl">{meta.emoji}</span>
-      <p className="text-white text-xs font-bold">{meta.label}</p>
-      <p className="text-gray-500 text-xs">{meta.desc}</p>
+      <p className="text-white text-xs font-bold">
+        <T text={meta.label} />
+      </p>
+      <p className="text-gray-500 text-xs">
+        <T text={meta.desc} />
+      </p>
     </div>
   );
 };
