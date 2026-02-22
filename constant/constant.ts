@@ -1,9 +1,9 @@
 import { BookOpen, Trophy, Users } from "lucide-react";
 
 export const HERO_SECTION_STATS = [
-  { label: "Lessons", value: "24+", icon: BookOpen },
+  { label: "Lessons", value: "3+", icon: BookOpen },
   { label: "Languages", value: "4", icon: Users },
-  { label: "Signs Learned", value: "1.2k", icon: Trophy },
+  { label: "Signs Learned", value: "10+", icon: Trophy },
 ];
 
 export const HERO_SECTION_FEATURES = [
