@@ -12,9 +12,6 @@ const LanguageSwitcher = () => {
 
   const current = LANGUAGES.find((l) => l.code === locale) ?? LANGUAGES[0];
 
-  console.log("locale ==> ", locale)
-  console.log("c == >", current)
-
   return (
     <div className="relative">
       <button
