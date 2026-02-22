@@ -4,15 +4,16 @@ import { useState } from "react";
 import { ChevronDown, Globe } from "lucide-react";
 import { useLingoContext } from "@lingo.dev/compiler/react";
 import { LANGUAGES } from "@/constant/constant";
-import { useRouter } from "next/navigation";
 
 const LanguageSwitcher = () => {
-  const router = useRouter();
 
   const { locale, setLocale } = useLingoContext();
   const [open, setOpen] = useState(false);
 
   const current = LANGUAGES.find((l) => l.code === locale) ?? LANGUAGES[0];
+
+  console.log("locale ==> ", locale)
+  console.log("c == >", current)
 
   return (
     <div className="relative">
@@ -49,7 +50,7 @@ const LanguageSwitcher = () => {
                     onClick={() => {
                       setLocale(lang.code);
                       setOpen(false);
-                      router.refresh();
+                      window.location.reload();
                     }}
                     className={`w-full flex items-center gap-3 px-4 py-2.5 text-sm transition-colors duration-100 group
                       ${
