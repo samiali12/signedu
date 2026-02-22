@@ -9,6 +9,8 @@ import { useCallback, useEffect, useRef, useState } from "react";
 import JameSignLobby from "./JameSignLobby";
 import JamMessageRow from "./JamMessageRow";
 import T from "../shared/T";
+import useProgress from "@/hooks/useProgress";
+import { recordJamSign } from "@/utils/leaderboard";
 
 const JAM_SIGNS: DetectedSign[] = [
   { word: "Hello", emoji: "👋", detect: (lm) => countFingers(lm) >= 4 },
@@ -41,6 +43,8 @@ const JamSign = () => {
   const HOLD_MS = 1500;
   const COOLDOWN_MS = 2000;
   const feedRef = useRef<HTMLDivElement>(null);
+
+  const { syncLeaderboard } = useProgress();
 
   useEffect(() => {
     if (!roomId) return;
@@ -97,8 +101,11 @@ const JamSign = () => {
       } catch (error) {
         console.log(error);
       }
+
+      const updated = recordJamSign();
+      syncLeaderboard(updated);
     },
-    [cooldown, roomId, userName],
+    [cooldown, roomId, syncLeaderboard, userName],
   );
 
   useEffect(() => {

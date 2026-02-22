@@ -26,7 +26,7 @@ export const addScore = (points: number) => {
     return p;
 }
 
-export const completeLesson = (lessonId: string, score: number, total: number) => {
+export const completeLesson = (lessonId: string, score: number) => {
     const p = getProgress();
     if (!p.lessonsCompleted.includes(lessonId)) {
         p.lessonsCompleted.push(lessonId);

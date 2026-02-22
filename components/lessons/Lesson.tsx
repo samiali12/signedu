@@ -1,6 +1,8 @@
 "use client";
 
+import useProgress from "@/hooks/useProgress";
 import { LessonType } from "@/types/lesson";
+import { completeLesson } from "@/utils/leaderboard";
 import { CheckCircle, ChevronRight, Trophy, XCircle } from "lucide-react";
 import { useRouter } from "next/navigation";
 import { useState } from "react";
@@ -22,10 +24,7 @@ const Lesson = ({ lesson }: Props) => {
   const isCorrect = selectedAnswer === currentSign?.correctAnswer;
   const isAnswered = selectedAnswer !== null;
 
-  if (!lesson)
-    return (
-      <div className="text-center text-gray-400 py-20">Lesson not found.</div>
-    );
+  const { syncLeaderboard } = useProgress();
 
   const handleAnswer = (option: string) => {
     if (isAnswered) return;
@@ -40,9 +39,24 @@ const Lesson = ({ lesson }: Props) => {
     if (currentSignIndex < lesson.signs.length - 1) {
       setCurrentSignIndex((i) => i + 1);
     } else {
+      const update = completeLesson(lesson.id, score);
+      syncLeaderboard({
+        userName: update.userName,
+        badges: update.badges,
+        jamSignsSent: update.jamSignsSent,
+        lastActive: update.lastActive,
+        lessonsCompleted: update.lessonsCompleted,
+        signsLearned: update.signsLearned,
+        totalScore: update.totalScore,
+      });
       setFinished(true);
     }
   };
+
+  if (!lesson)
+    return (
+      <div className="text-center text-gray-400 py-20">Lesson not found.</div>
+    );
 
   if (finished) {
     const percent = Math.round((score / lesson.signs.length) * 100);

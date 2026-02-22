@@ -1,6 +1,9 @@
+"use client";
+
 import { LessonType } from "@/types/lesson";
 import { ChevronRight} from "lucide-react";
 import Link from "next/link";
+import T from "../shared/T";
 
 const levelColor = {
   Beginner: "bg-green-900 text-green-300",
@@ -24,7 +27,7 @@ const LessonCard = ({ lesson }: { lesson: LessonType }) => {
                   levelColor[lesson.level as keyof typeof levelColor]
                 }`}
               >
-                {lesson.level}
+                <T text={lesson.level} />
               </span>
             </div>
             <p className="text-gray-400 text-sm">{lesson.description}</p>
