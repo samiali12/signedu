@@ -12,7 +12,6 @@ const useTranslate = (text: string) => {
     useEffect(() => {
         const run = async () => {
             const locale = getLocale();
-            console.log("l ==> ", locale)
             if ('en' ==  locale) return translated;
             const response = await axios.post("/api/translate", { text, locale })
             const data = response.data;

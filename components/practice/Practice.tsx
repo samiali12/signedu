@@ -4,6 +4,7 @@ import { Camera, CheckCircle, Hand, RefreshCw } from "lucide-react";
 import { useCallback, useEffect, useRef, useState } from "react";
 import T from "../shared/T";
 import { practice_sign } from "@/data/practice";
+import AIFeedbackPanel from "./AIFeedbackPanel";
 
 const Practice = () => {
   const videoRef = useRef<HTMLVideoElement>(null);
@@ -19,6 +20,52 @@ const Practice = () => {
   const HOLD_DURATION = 1500;
 
   const currentSign = practice_sign[currentSignIndex];
+
+  const [aiFeedback, setAiFeedback] = useState<string | null>(null);
+  const [aiLoading, setAiLoading] = useState(false);
+
+  const captureFrame = useCallback((): string | null => {
+    const canvas = canvasRef.current;
+    if (!canvas) return null;
+    try {
+      // Resize to 512px wide to keep payload small
+      const offscreen = document.createElement("canvas");
+      offscreen.width = 512;
+      offscreen.height = Math.round((canvas.height / canvas.width) * 512);
+      const ctx = offscreen.getContext("2d");
+      if (!ctx) return null;
+      ctx.drawImage(canvas, 0, 0, offscreen.width, offscreen.height);
+      // Return base64 without the data: prefix (Gemini wants raw base64)
+      return offscreen.toDataURL("image/jpeg", 0.8).split(",")[1];
+    } catch {
+      return null;
+    }
+  }, []);
+
+  const requestFeedback = useCallback(async () => {
+    const imageBase64 = captureFrame();
+    if (!imageBase64) return;
+
+    setAiLoading(true);
+    setAiFeedback(null);
+
+    try {
+      const res = await fetch("/api/feedback", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          imageBase64,
+          signWord: currentSign.word,
+        }),
+      });
+      const data = await res.json();
+      setAiFeedback(data.feedback);
+    } catch {
+      setAiFeedback("Keep practicing — you're doing great!");
+    } finally {
+      setAiLoading(false);
+    }
+  }, [captureFrame, currentSign.word]);
 
   useEffect(() => {
     let camera: { start: () => void; stop: () => void } | null = null;
@@ -308,6 +355,15 @@ const Practice = () => {
             ))}
           </div>
         </div>
+
+        {signDetected && (
+          <AIFeedbackPanel
+            feedback={aiFeedback}
+            loading={aiLoading}
+            onRequest={requestFeedback}
+            signWord={currentSign.word}
+          />
+        )}
       </div>
     </div>
   );
