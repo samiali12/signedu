@@ -1,6 +1,7 @@
 # 🤟 SignEdu — Multilingual Sign Language Learning Platform
 
 DEMO link: https://www.loom.com/share/a73d0e97c81c476183b4106cb5a585c4
+Medium Blog: https://medium.com/@samijameel100/i-built-a-sign-language-learning-web-based-app-during-lingo-dev-hackthons-6c3a36bc6818
 
 Learn ASL (American Sign Language) in your native language. Real-time hand detection, interactive lessons, live sign jam rooms, and a global leaderboard. 
 
